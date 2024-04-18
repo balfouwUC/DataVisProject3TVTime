@@ -117,6 +117,19 @@
         font-size: 16px;
         color: #666;
       }
+
+      .barchart {
+        z-index: 50;
+      }
+      .charts-container {
+        width: 100%;
+      }
+      .barchart-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -174,11 +187,18 @@
         <p>Bob Briscoe</p>
       </div>
     </div>
-
   </div>  
+
+<div class="charts-container">
+  <div class="barchart-container">
+    <h1>Characters and Dialogue Counts for all seasons</h1>
+    <svg id="barchart" class="barchart"></svg>
+  </div>
+</div>
 
 
     <script src="js/d3.v6.min.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script src="js/barchart.js"></script>
   </body>
 </html>

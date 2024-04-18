@@ -7,9 +7,7 @@ class Barchart {
      * @param {Object}
      * @param {Array}
      */
-    constructor(_config, _data, 
-    _dataStore
-      ) {
+    constructor(_config, _data) {
       // Configuration object with defaults
       this.config = {
         parentElement: _config.parentElement,
@@ -20,8 +18,8 @@ class Barchart {
       }
       this.data = _data;
       this.colorScale = colorScaleForShapes; 
-      this.dataStore = _dataStore; 
-      this.dataStore.subscribe(this); 
+
+      console.log(this.data, "in barchart")
 
       this.tooltip = d3
       .select('body')
@@ -50,11 +48,17 @@ class Barchart {
       vis.height = vis.config.containerHeight - vis.config.margin.top - vis.config.margin.bottom;
   
       // Initialize scales and axes
-      vis.uniqueShapes = [...new Set(vis.data.map(d => d.ufo_shape))]
+      vis.characterNames = Object.keys(vis.data)
+      console.log(vis.characterNames)
+      vis.dialogueCounts = vis.characterNames.map(character => vis.data[character].length);
+      console.log(vis.dialogueCounts)
+      vis.rollupData = vis.characterNames.map((character, i) => ({key: character, count: vis.data[character].length})).sort((a, b) => d3.descending(a.dialogueCount, b.dialogueCount)).slice(0, 10);
+      vis.selectedCharacters = vis.rollupData.map(d => d.key);
+      console.log(vis.rollupData)
       // Initialize scales
       vis.colorScale = d3.scaleOrdinal()
           .range(vis.colorScale) 
-          .domain(vis.uniqueShapes);
+          .domain(vis.characterNames);
       
       vis.yScale = d3.scaleLinear()
           .range([vis.height, 0]) 
@@ -102,19 +106,14 @@ class Barchart {
     updateVis() {
       let vis = this;
   
-      const aggregatedDataMap = d3.rollups(vis.data, v => v.length, d => d.ufo_shape);
-      vis.aggregatedData = Array.from(aggregatedDataMap, ([key, count]) => ({ key, count }));
-
-  
       // Specificy accessor functions
-
       vis.colorValue = d => d.key;
       vis.xValue = d => d.key;
       vis.yValue = d => d.count;
-  
+        
       // Set the scale input domains
-      vis.xScale.domain(vis.uniqueShapes);
-      vis.yScale.domain([0, d3.max(vis.aggregatedData, d => d.count)]);
+      vis.xScale.domain(vis.selectedCharacters);
+      vis.yScale.domain([0, d3.max(vis.rollupData, d => d.count)]);
   
       vis.renderVis();
     }
@@ -127,7 +126,7 @@ class Barchart {
   
       // Add rectangles
       const bars = vis.chart.selectAll('.bar')
-          .data(vis.aggregatedData, vis.xValue)
+          .data(vis.rollupData, vis.xValue)
           .join('rect')
           .attr('class', 'bar')
           .attr('x', d => vis.xScale(vis.xValue(d)))
@@ -139,10 +138,10 @@ class Barchart {
 
             vis.tooltip.style("visibility", "visible")
               .html(
-                "<strong>UFO Shape: </strong>" +
+                "<strong>Character: </strong>" +
                   d.key +
                   "<br>" +
-                  "<strong>Number of UFO Sightings: </strong>" +
+                  "<strong>Number of Dialogues: </strong>" +
                   d.count
               )
               .style("top", event.pageY - 10 + "px")
@@ -163,11 +162,4 @@ class Barchart {
       vis.yAxisG.call(vis.yAxis)
   
     }
-
-    update(data) {
-      let vis = this;
-      vis.data = data;
-      vis.updateVis();
-    }
-    
   }

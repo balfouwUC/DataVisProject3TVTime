@@ -12,3 +12,16 @@ function handleCharacterClick(event) {
 characterImages.forEach(image => {
   image.addEventListener('click', handleCharacterClick);
 });
+
+// load the file for character importance for whole - barchart
+d3.json("data/frasier_transcripts/character_data_whole_season.json").then(function(data) {
+  console.log(data); 
+  const barchart = new Barchart(
+    {parentElement: "#barchart"}, // The selector for the container to hold the bar chart
+    data
+    );
+
+}).catch(function(error) {
+  // Handle any errors that occur during loading
+  console.error("Error loading the JSON file:", error);
+});
