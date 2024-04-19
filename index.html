@@ -117,6 +117,9 @@
         font-size: 16px;
         color: #666;
       }
+      .barchart-container {
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -174,11 +177,23 @@
         <p>Bob Briscoe</p>
       </div>
     </div>
-
   </div>  
+
+<div>
+  <div class="barchart-container">
+    <h1>Characters and Dialogue Counts for all seasons combined</h1>
+    <svg id="barchart"></svg>
+  </div>
+  <div class="barchart-container">
+    <h1>Characters and Dialogue counts per season</h1>
+    <svg id="stacked-barchart"></svg>
+  </div>
+</div>
 
 
     <script src="js/d3.v6.min.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/stacked-barchart.js"></script>
   </body>
 </html>
