@@ -19,7 +19,6 @@ class Barchart {
       this.data = _data;
       this.colorScale = colorScaleForShapes; 
 
-      console.log(this.data, "in barchart")
 
       this.tooltip = d3
       .select('body')
@@ -49,12 +48,11 @@ class Barchart {
   
       // Initialize scales and axes
       vis.characterNames = Object.keys(vis.data)
-      console.log(vis.characterNames)
       vis.dialogueCounts = vis.characterNames.map(character => vis.data[character].length);
-      console.log(vis.dialogueCounts)
-      vis.rollupData = vis.characterNames.map((character, i) => ({key: character, count: vis.data[character].length})).sort((a, b) => d3.descending(a.dialogueCount, b.dialogueCount)).slice(0, 10);
+      vis.rollupData = vis.characterNames.map((character, i) => ({key: character, count: vis.data[character].length})).sort((a, b) => b.count - a.count).splice(0, 10);
+      console.log(vis.rollupData, "rollupData")
       vis.selectedCharacters = vis.rollupData.map(d => d.key);
-      console.log(vis.rollupData)
+      console.log(vis.selectedCharacters, "selectedCharacters")
       // Initialize scales
       vis.colorScale = d3.scaleOrdinal()
           .range(vis.colorScale) 

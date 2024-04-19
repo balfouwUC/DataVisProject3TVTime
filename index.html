@@ -117,13 +117,9 @@
         font-size: 16px;
         color: #666;
       }
-
-      .barchart {
-        z-index: 50;
-      }
-      .charts-container {
+      <!-- .charts-container {
         width: 100%;
-      }
+      } -->
       .barchart-container {
         justify-content: center;
         display: flex;
@@ -192,7 +188,11 @@
 <div class="charts-container">
   <div class="barchart-container">
     <h1>Characters and Dialogue Counts for all seasons</h1>
-    <svg id="barchart" class="barchart"></svg>
+    <svg id="barchart"></svg>
+  </div>
+  <div class="barchart-container">
+    <h1>Characters and Dialogue Counts for all seasons</h1>
+    <svg id="stacked-barchart"></svg>
   </div>
 </div>
 
@@ -200,5 +200,6 @@
     <script src="js/d3.v6.min.js"></script>
     <script type="module" src="js/main.js"></script>
     <script src="js/barchart.js"></script>
+    <script src="js/stacked-barchart.js"></script>
   </body>
 </html>
