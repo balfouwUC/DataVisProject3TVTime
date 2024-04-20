@@ -40,7 +40,7 @@
 
       .character img {
         width: 100%;
-        height: 150px; 
+        height: 150px;
         object-fit: cover;
         border-radius: 10px;
       }
@@ -64,6 +64,19 @@
         text-align: center;
       }
 
+      .character_appearances {
+        display: none;
+        justify-content: left;
+        align-items: start;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        padding-top: 100px;
+        overflow: auto;
+      }
+
       .textbox {
         background-color: #f9f9f9;
         border-radius: 10px;
@@ -85,26 +98,26 @@
       }
 
       .container1 {
-        display: flex;                    
-        justify-content: space-between;   
-        align-items: start;               
-        flex-wrap: nowrap;                
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: nowrap;
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
         text-align: center;
         padding-top: 100px;
       }
-      
+
       .textbox1 {
-        flex: 1 1 50%;                    
+        flex: 1 1 50%;
         background-color: #f9f9f9;
         border-radius: 10px;
         padding: 20px;
-        margin: 10px; 
-        height: 300px;                  
+        margin: 10px;
+        height: 300px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-align: left;                
+        text-align: left;
       }
       .textbox1 h2 {
         margin-bottom: 10px;
@@ -120,63 +133,89 @@
     </style>
   </head>
   <body>
+    <img class="logo" src="public/images/logo.png" alt="Logo" />
 
-    <img class="logo" src="public/images/logo.png" alt="Logo">
-    
-<div class="container1">
-    <div class="textbox1">
-      <h2>Overview</h2>
-     <p>"Frasier," the acclaimed American sitcom, graced television screens from 1993 to 2004 on NBC. Originally spun off from the beloved series "Cheers," the show chronicles the life of Dr. Frasier Crane, a sophisticated psychiatrist and radio show host. Set against the vibrant backdrop of Seattle, Washington, it humorously explores Frasier's intricate personal and professional relationships, weaving together wit, charm, and intelligence in its narrative.</p>
-    </div>
-
-    <div class="textbox1">
-      <h2>Seasons and Episodes</h2>
-      <p>"Frasier" enjoyed a remarkable run of 11 seasons, becoming a mainstay in American television from 1993 to 2004. Throughout its tenure, the show delivered a total of 264 episodes, a testament to its popularity and enduring appeal. This prolific output not only cemented "Frasier" as one of the longest-running sitcoms in TV history but also allowed it to develop a rich, complex narrative filled with memorable characters and intelligent humor. The series’ longevity and prolific episode count are reflective of its widespread acclaim and the deep connection it fostered with a diverse audience.</p>
-    </div>
-  </div>
-
-  <div class ="textbox">
-    <h2>Main Characters</h2>
-    <div class="characters">
-
-      <div class="character">
-        <img src="public/images/frasiercane.png" alt="frasier_cane">
-        <p>Frasier Cane</p>
+    <div class="container1">
+      <div class="textbox1">
+        <h2>Overview</h2>
+        <p>
+          "Frasier," the acclaimed American sitcom, graced television screens
+          from 1993 to 2004 on NBC. Originally spun off from the beloved series
+          "Cheers," the show chronicles the life of Dr. Frasier Crane, a
+          sophisticated psychiatrist and radio show host. Set against the
+          vibrant backdrop of Seattle, Washington, it humorously explores
+          Frasier's intricate personal and professional relationships, weaving
+          together wit, charm, and intelligence in its narrative.
+        </p>
       </div>
 
-      <div class="character">
-        <img src="public/images/daphnemoon.png" alt="daphne_moon">
-        <p>Daphne Moon</p>
-      </div>
-
-      <div class="character">
-        <img src="public/images/nilescrane.png" alt="niles_crane">
-        <p>Niles Crane</p>
-      </div>
-
-      <div class="character">
-        <img src="public/images/rozdoyle.png" alt="roz_doyle">
-        <p>Roz Doyle</p>
-      </div>
-
-      <div class="character">
-        <img src="public/images/martincrane.png" alt="martin_crane">
-        <p>Martin Crane</p>
-      </div>
-
-      <div class="character">
-        <img src="public/images/eddie.png" alt="dddie">
-        <p>Eddie</p>
-      </div>
-
-      <div class="character">
-        <img src="public/images/bobbriscoe.png" alt="bob_briscoe">
-        <p>Bob Briscoe</p>
+      <div class="textbox1">
+        <h2>Seasons and Episodes</h2>
+        <p>
+          "Frasier" enjoyed a remarkable run of 11 seasons, becoming a mainstay
+          in American television from 1993 to 2004. Throughout its tenure, the
+          show delivered a total of 264 episodes, a testament to its popularity
+          and enduring appeal. This prolific output not only cemented "Frasier"
+          as one of the longest-running sitcoms in TV history but also allowed
+          it to develop a rich, complex narrative filled with memorable
+          characters and intelligent humor. The series’ longevity and prolific
+          episode count are reflective of its widespread acclaim and the deep
+          connection it fostered with a diverse audience.
+        </p>
       </div>
     </div>
 
-  </div>  
+    <div class="textbox">
+      <h2>Main Characters</h2>
+      <div class="characters">
+        <div class="character">
+          <img src="public/images/frasiercane.png" alt="frasier_cane" />
+          <p>Frasier Cane</p>
+        </div>
 
+        <div class="character">
+          <img src="public/images/daphnemoon.png" alt="daphne_moon" />
+          <p>Daphne Moon</p>
+        </div>
+
+        <div class="character">
+          <img src="public/images/nilescrane.png" alt="niles_crane" />
+          <p>Niles Crane</p>
+        </div>
+
+        <div class="character">
+          <img src="public/images/rozdoyle.png" alt="roz_doyle" />
+          <p>Roz Doyle</p>
+        </div>
+
+        <div class="character">
+          <img src="public/images/martincrane.png" alt="martin_crane" />
+          <p>Martin Crane</p>
+        </div>
+
+        <div class="character">
+          <img src="public/images/eddie.png" alt="eddie" />
+          <p>Eddie</p>
+        </div>
+
+        <div class="character">
+          <img src="public/images/bobbriscoe.png" alt="bob_briscoe" />
+          <p>Bob Briscoe</p>
+        </div>
+      </div>
+      <div class="character_appearances" id="character_appearances">
+        <div class="textbox1">
+          <h2>List of Appearances</h2>
+          <p id="frasier_appearances">frasier_appearances</p>
+          <p id="daphne_appearances">daphne_appearances</p>
+          <p id="niles_appearances">niles_appearances</p>
+          <p id="roz_appearances">roz_appearances</p>
+          <p id="martin_appearances">martin_appearances</p>
+          <p id="eddie_appearances">eddie_appearances</p>
+          <p id="bob_appearances">bob_appearances</p>
+        </div>
+      </div>
+    </div>
 
     <script src="js/d3.v6.min.js"></script>
     <script type="module" src="js/main.js"></script>
