@@ -26,7 +26,12 @@ function handleCharacterClick(event) {
   // Get the name of the character from the 'alt' attribute of the image
   let characterName = event.target.alt;
   console.log("Character clicked:", characterName);
+  let characterBtn = characterName + "_btn";
   characterName = characterName.split("_")[0] + "_appearances";
+  console.log(characterBtn);
+  let dropDownTitle =
+    document.getElementById(characterBtn).innerText + "'s List of Appearances";
+  document.getElementById("dropdown_title").innerText = dropDownTitle;
   let selectBox = document.getElementById(characterName);
   // characterBox.innerText = characterName;
   if (selectBox.style.display == "flex") {
