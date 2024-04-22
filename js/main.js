@@ -294,3 +294,12 @@ d3.json("data/frasier_transcripts/characters_by_season.json").then(function(data
   console.error("Error loading the JSON file:", error);
 });
 
+
+d3.json("data/frasier_transcripts/full_conversation_data.json").then(function(data){
+  const conversationHistogram = new WordLengthHisto(
+    {parentElement: "#word-length-histo"},
+    data
+  );
+}).catch(function(error){
+  console.error("Error loading the JSON file:", error);
+});
