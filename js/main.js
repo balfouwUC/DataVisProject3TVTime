@@ -38,7 +38,7 @@ d3.json("data/frasier_transcripts/characters_by_season.json").then(function(data
 });
 
 d3.json("data/frasier_transcripts/full_conversation_data.json").then(function(data){
-  const conversationHistogram = new conversationHistogram(
+  const conversationHistogram = new WordLengthHisto(
     {parentElement: "#word-length-histo"},
     data
   );
