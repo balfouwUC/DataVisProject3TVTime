@@ -21,6 +21,8 @@ class WordLengthHisto{
             .style('border-radius', '4px')
             .style('color', '#fff')
             .text('a simple tooltip');
+
+        d3.selectAll(".histo-character-dropdown").on("change", (event) => this.updateVis());
     }
 
     initVis(){
@@ -41,6 +43,16 @@ class WordLengthHisto{
         
         vis.yScale = d3.scaleLinear()
             .range([vis.height, 0]);
+
+        // Append empty x-axis group and move it to the bottom of the chart
+        vis.xAxis = d3.axisBottom(vis.xScale);
+        vis.xAxisG = vis.chart.append('g')
+            .attr('transform', `translate(0,${vis.height})`);
+        
+        // Append y-axis group 
+        vis.yAxis = d3.axisLeft(vis.yScale);
+        vis.yAxisG = vis.chart.append('g')
+            .attr('class', 'axis y-axis');
         
         vis.updateVis();
     }
@@ -64,9 +76,7 @@ class WordLengthHisto{
 
         vis.xScale.domain([1, d3.max(vis.characterAData, function(d){ return d.length; })]);
 
-        vis.xAxis = vis.chart.append("g")
-            .attr("transform", "translate(0," + vis.height + ")")
-            .call(d3.axisBottom(vis.xScale));
+        vis.xAxisG.call(vis.xAxis);
 
         vis.histogram = d3.histogram()
             .value(function(d){ return d.length; })
@@ -76,19 +86,16 @@ class WordLengthHisto{
         vis.binsA = vis.histogram(vis.characterAData);
 
         vis.yScale.domain([0, d3.max(vis.binsA, function(d){ return d.length; })]);
-        vis.yAxis = vis.chart.append("g")
-            .call(d3.axisLeft(vis.yScale));
-
+        vis.yAxisG.call(vis.yAxis);
         vis.renderVis();
     }
 
     renderVis(){
         let vis = this;
 
-        vis.chart.selectAll("rect")
+        vis.bars = vis.chart.selectAll("rect")
             .data(vis.binsA)
-            .enter()
-            .append("rect")
+            .join("rect")
                 .attr("x", 1)
                 .attr("transform", function(d) { return "translate(" + vis.xScale(d.x0) + "," + vis.yScale(d.length) + ")"; })
                 .attr("width", function(d) { return vis.xScale(d.x1) - vis.xScale(d.x0) -1 ; })
