@@ -50,9 +50,9 @@ class Barchart {
       vis.characterNames = Object.keys(vis.data)
       vis.dialogueCounts = vis.characterNames.map(character => vis.data[character].length);
       vis.rollupData = vis.characterNames.map((character, i) => ({key: character, count: vis.data[character].length})).sort((a, b) => b.count - a.count).splice(0, 10);
-      console.log(vis.rollupData, "rollupData")
+      // console.log(vis.rollupData, "rollupData")
       vis.selectedCharacters = vis.rollupData.map(d => d.key);
-      console.log(vis.selectedCharacters, "selectedCharacters")
+      // console.log(vis.selectedCharacters, "selectedCharacters")
       // Initialize scales
       vis.colorScale = d3.scaleOrdinal()
           .range(vis.colorScale) 
