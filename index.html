@@ -139,6 +139,22 @@
       }
     </style>
     <script>
+      function resetCharacters() {
+        document.querySelectorAll('.character').forEach(character => {
+            character.classList.remove('selected');
+        });
+        document.querySelectorAll('.character-link').forEach(link => {
+          link.style.fontWeight = 'normal'; 
+          link.style.color = 'black'; 
+          link.textContent = link.textContent.replace(" (SELECTED)", "");
+        })
+        const wordCloudWord = document.getElementById('word-cloud-word');
+        const wordCloudPhrase = document.getElementById('word-cloud-phrase');
+        const characterAppearances = document.getElementById('character_appearances');
+        wordCloudWord.innerHTML = '<p style="text-align:center; margin-top:50px;">Select a character to view the word cloud.</p>';
+        wordCloudPhrase.innerHTML = '';
+        characterAppearances.style.display = 'none';
+    }
       function selectCharacter(selectedLink) {
         document.querySelectorAll('.character-link').forEach(link => {
           link.style.fontWeight = 'normal'; 
@@ -211,7 +227,6 @@
         </p>
       </div>
     </div>
-<!-- 
 
   <div class = "textbox">
     <div style="display: flex;">
@@ -226,7 +241,6 @@
     </div>
     </div>
     
-
   <div class ="textbox">
     <h2>Main Characters</h2>
     <div class="characters">
@@ -264,59 +278,20 @@
       <div class="character">
         <img src="public/images/bobbriscoe.png" alt="Bulldog">
         <p>Bob "Bulldog" Briscoe</p>
-======= -->
-    <div class="textbox">
-      <h2>Main Characters</h2>
-      <div class="characters">
-        <div class="character">
-          <img src="public/images/frasiercane.png" alt="frasier_cane" />
-          <p id="frasier_cane_btn">Frasier Cane</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/daphnemoon.png" alt="daphne_moon" />
-          <p id="daphne_moon_btn">Daphne Moon</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/nilescrane.png" alt="niles_crane" />
-          <p id="niles_crane_btn">Niles Crane</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/rozdoyle.png" alt="roz_doyle" />
-          <p id="roz_doyle_btn">Roz Doyle</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/martincrane.png" alt="martin_crane" />
-          <p id="martin_crane_btn">Martin Crane</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/eddie.png" alt="eddie" />
-          <p id="eddie_btn">Eddie</p>
-        </div>
-
-        <div class="character">
-          <img src="public/images/bobbriscoe.png" alt="bob_briscoe" />
-          <p id="bob_briscoe_btn">Bob Briscoe</p>
-        </div>
-      </div>
-      <div class="character_appearances" id="character_appearances">
-        <div class="textbox1">
-          <h2 id="dropdown_title"></h2>
-          <p id="frasier_appearances"></p>
-          <p id="daphne_appearances"></p>
-          <p id="niles_appearances"></p>
-          <p id="roz_appearances"></p>
-          <p id="martin_appearances"></p>
-          <p id="eddie_appearances"></p>
-          <p id="bob_appearances"></p>
-        </div>
-<!-- >>>>>>> main -->
       </div>
     </div>
+    <div class="character_appearances" id="character_appearances" style = "width: 100%">
+      <div class="textbox1">
+        <h2 id="dropdown_title"></h2>
+        <p id="Frasier_appearances"></p>
+        <p id="Daphne_appearances"></p>
+        <p id="Niles_appearances"></p>
+        <p id="Roz_appearances"></p>
+        <p id="Martin_appearances"></p>
+        <p id="Eddie_appearances"></p>
+        <p id="Bulldog_appearances"></p>
+      </div>
+    </div> 
     <h2>Other Characters</h2>
     <ul>
       <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Bebe Glazer</a></b></p></li>
@@ -324,8 +299,9 @@
       <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Donny Douglas</a></b></p></li>
       <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Kenny Daly</a></b></p></li>
     </ul>
-  </div>  
-<!-- 
+    <br><button id="reset-characters-button" onclick="resetCharacters()">Reset Characters</button>
+  </div> 
+  </div>
 
 
     <div class="textbox">
@@ -352,7 +328,7 @@
           <div style="flex: 1;">
             <h3>Most Frequently Said Words</h3>
             <div id="word-cloud-word" style="width: 500px; height: 500px; margin: 10px;">
-              <p style="text-align: center; margin-top: 50px;">Select a character to view the visualizations.</p>
+              <p style="width: 100%; margin-top: 50px; margin-left: 300px">Select a character to view the visualizations.</p>
             </div>
           </div>
           <div style="flex: 1;">
@@ -360,20 +336,11 @@
             <div id="word-cloud-phrase" style="width: 500px; height: 500px; margin: 10px;"></div>
           </div>
         </div>
-    </div> -->
-  <div>
-    <div class="barchart-container">
-      <h1>Characters and Dialogue Counts for all seasons combined</h1>
-      <svg id="barchart"></svg>
-    </div>
-    <div class="barchart-container">
-      <h1>Characters and Dialogue counts per season</h1>
-      <svg id="stacked-barchart"></svg>
-    </div>
-  </div>
+    </div> 
 
+<div class = "textbox">
 <div class="histogram-container">
-    <h1>Word Length by Character and Conversation Partner</h1>
+    <h3>Word Length by Character and Conversation Partner</h3>
     <label>When:</label>
     <select class="histo-character-dropdown" id="histoCharacterA">
         <option value="Frasier" selected>Frasier</option>
@@ -403,6 +370,7 @@
     <br>
     <svg id="word-length-histo"></svg>
 </div>
+</div>
     <script src="js/d3.v6.min.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.js"></script>
@@ -410,10 +378,7 @@
     <script type="module" src="js/main.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/stacked-barchart.js"></script>
-<!-- <<<<<<< word_cloud -->
 
-<!-- ======= -->
     <script src="js/word-length-histo.js"></script>
-<!-- >>>>>>> main -->
   </body>
 </html>
