@@ -34,7 +34,7 @@ class StackedBarchart {
   
       // Initialize scales and axes
       vis.subgroups = Object.keys(vis.data)
-      console.log(vis.subgroups, "subgroups")
+      // console.log(vis.subgroups, "subgroups")
 
       vis.selectedCharacters = [
         "Frasier",
@@ -49,9 +49,9 @@ class StackedBarchart {
         "Donny"
     ]
       vis.transformedData = vis.transformData(vis.data)
-        console.log(vis.transformedData, "transformed data")
+        // console.log(vis.transformedData, "transformed data")
         vis.groups = d3.map(vis.transformedData, function(d){return(d.group)})
-      console.log(vis.groups, "groups")
+      // console.log(vis.groups, "groups")
   
     //   // Define size of SVG drawing area
       vis.svg = d3.select(vis.config.parentElement)
@@ -122,7 +122,7 @@ class StackedBarchart {
         .attr("width",x.bandwidth())
         .attr("stroke", "grey")
       .on("mouseover", function(d) {
-        console.log(d3.select(this.parentNode).datum(), "this.parentNode")
+        // console.log(d3.select(this.parentNode).datum(), "this.parentNode")
         // what subgroup are we hovering?
         var subgroupName = d3.select(this.parentNode).datum().key;
         // Reduce opacity of all rect to 0.2
