@@ -325,25 +325,57 @@ d3.json("data/frasier_transcripts/conversations_by_season.json")
     console.error("Error loading the JSON file:", error);
   });
 
+// // let selectSeason = document.getElementById("arc-dropdown");
+// // selectSeason.addEventListener("change", function () {
+// //   let selectedSeason = selectSeason.options[selectSeason.selectedIndex];
+// //   let selectedValue = selectedSeason.value;
+
+// //   d3.json("data/frasier_transcripts/conversations_by_season.json")
+// //     .then(function (data) {
+// //       const conversationArc = new ArcDiagram(
+// //         {
+// //           parentElement: "#conversation-arc",
+// //           width: 640,
+// //           step: 14,
+// //           marginTop: 20,
+// //           marginRight: 20,
+// //           marginBottom: 20,
+// //           marginLeft: 130,
+// //         },
+// //         data[document.getElementById("arc-dropdown").value]
+// //       );
+// //     })
+// //     .catch(function (error) {
+// //       console.error("Error loading the JSON file:", error);
+// //     });
+// });
 let selectSeason = document.getElementById("arc-dropdown");
 selectSeason.addEventListener("change", function () {
-  let selectedSeason = selectSeason.options[selectSeason.selectedIndex];
-  let selectedValue = selectedSeason.value;
+  // Get the selected season value
+  let selectedValue = selectSeason.value;
 
+  // Clear existing SVG content
+  const svgContainer = document.getElementById('conversation-arc');
+  svgContainer.innerHTML = '';
+
+  // Load the JSON data for the selected season
   d3.json("data/frasier_transcripts/conversations_by_season.json")
     .then(function (data) {
-      const conversationArc = new ArcDiagram(
-        {
+      // Check if data for the selected season is available
+      if (data[selectedValue]) {
+        // Create a new instance of ArcDiagram
+        const conversationArc = new ArcDiagram({
           parentElement: "#conversation-arc",
-          width: 640,
+          width: 900,
           step: 14,
           marginTop: 20,
           marginRight: 20,
           marginBottom: 20,
           marginLeft: 130,
-        },
-        data[document.getElementById("arc-dropdown").value]
-      );
+        }, data[selectedValue]);
+      } else {
+        console.error("No data available for the selected season");
+      }
     })
     .catch(function (error) {
       console.error("Error loading the JSON file:", error);
