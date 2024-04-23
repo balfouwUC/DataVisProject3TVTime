@@ -311,7 +311,7 @@ d3.json("data/frasier_transcripts/conversations_by_season.json")
     const conversationArc = new ArcDiagram(
       {
         parentElement: "#conversation-arc",
-        width: 640,
+        width: 900,
         step: 14,
         marginTop: 20,
         marginRight: 20,
@@ -355,8 +355,8 @@ selectSeason.addEventListener("change", function () {
   let selectedValue = selectSeason.value;
 
   // Clear existing SVG content
-  const svgContainer = document.getElementById('conversation-arc');
-  svgContainer.innerHTML = '';
+  const svgContainer = document.getElementById("conversation-arc");
+  svgContainer.innerHTML = "";
 
   // Load the JSON data for the selected season
   d3.json("data/frasier_transcripts/conversations_by_season.json")
@@ -364,15 +364,18 @@ selectSeason.addEventListener("change", function () {
       // Check if data for the selected season is available
       if (data[selectedValue]) {
         // Create a new instance of ArcDiagram
-        const conversationArc = new ArcDiagram({
-          parentElement: "#conversation-arc",
-          width: 900,
-          step: 14,
-          marginTop: 20,
-          marginRight: 20,
-          marginBottom: 20,
-          marginLeft: 130,
-        }, data[selectedValue]);
+        const conversationArc = new ArcDiagram(
+          {
+            parentElement: "#conversation-arc",
+            width: 900,
+            step: 14,
+            marginTop: 20,
+            marginRight: 20,
+            marginBottom: 20,
+            marginLeft: 130,
+          },
+          data[selectedValue]
+        );
       } else {
         console.error("No data available for the selected season");
       }

@@ -11,10 +11,12 @@ class ArcDiagram {
     };
 
     // Ensure all nodes are present in the nodes array
-    let nodeIds = new Set(_data.nodes.map(node => node.id));
+    let nodeIds = new Set(_data.nodes.map((node) => node.id));
 
     // Filter links to only those where both source and target exist in the nodes array
-    const validLinks = _data.links.filter(link => nodeIds.has(link.source) && nodeIds.has(link.target));
+    const validLinks = _data.links.filter(
+      (link) => nodeIds.has(link.source) && nodeIds.has(link.target)
+    );
 
     // Use the filtered links for the data
     this.data = { nodes: _data.nodes, links: validLinks };
@@ -36,16 +38,15 @@ class ArcDiagram {
     // Extract nodes and links
     const { nodes, links } = this.data;
     // console.log("nodes: ", nodes);
-    // console.log("links: ", links); 
-//     let nodeIds = new Set(nodes.map(node => node.id));
-// links.forEach(link => {
-//   if (!nodeIds.has(link.source) || !nodeIds.has(link.target)) {
-//     console.error("Invalid link reference:", link);
-//   }
-// });
-// const validLinks = links.filter(link => nodeIds.has(link.source) && nodeIds.has(link.target));
-// this.data = { nodes, links: validLinks };
-
+    // console.log("links: ", links);
+    //     let nodeIds = new Set(nodes.map(node => node.id));
+    // links.forEach(link => {
+    //   if (!nodeIds.has(link.source) || !nodeIds.has(link.target)) {
+    //     console.error("Invalid link reference:", link);
+    //   }
+    // });
+    // const validLinks = links.filter(link => nodeIds.has(link.source) && nodeIds.has(link.target));
+    // this.data = { nodes, links: validLinks };
 
     // Create a color scale for nodes and links
     const color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -59,15 +60,15 @@ class ArcDiagram {
     this.svg = d3
       .select(parentElement)
       .append("svg")
-      .attr("width", width)
+      .attr("width", "100%")
       .attr(
         "height",
         (nodes.length - 1) * this.config.step + marginTop + marginBottom
       )
       .attr("viewBox", [
+        -150,
         0,
-        0,
-        width,
+        width + 350,
         (nodes.length - 1) * this.config.step + marginTop + marginBottom,
       ])
       .attr("style", "max-width: 100%; height: auto;");
@@ -86,10 +87,12 @@ class ArcDiagram {
     //     ],
     //   )
     // );
-    this.Y = new Map(nodes.map(({ id }, index) => {
-      let yPosition = marginTop + index * this.config.step;
-      return [id, yPosition];
-    }));
+    this.Y = new Map(
+      nodes.map(({ id }, index) => {
+        let yPosition = marginTop + index * this.config.step;
+        return [id, yPosition];
+      })
+    );
 
     // // Add an arc for each link.
     // function arc(d) {
@@ -104,36 +107,37 @@ class ArcDiagram {
 
     // Inside your initVis method
 
-// // Add an arc for each link using an arrow function to maintain the context of 'this'
-// const arc = (d) => {
-//   console.log("source: ", this.Y.get(d.source));
-//   const y1 = this.Y.get(d.source);
-//   const y2 = this.Y.get(d.target);
-//   const r = Math.abs(y2 - y1) / 2;
-//   return `M${marginLeft},${y1}A${r},${r} 0,0,${y1 < y2 ? 1 : 0} ${marginLeft},${y2}`;
-// };
-const arc = (d) => {
-  const y1 = this.Y.get(d.source);
-  const y2 = this.Y.get(d.target);
-  if (y1 === undefined || y2 === undefined) {
-    console.error("Undefined Y position:", d);
-    return ""; // Return an empty path if positions are undefined
-  }
-  const r = Math.abs(y2 - y1) / 2;
-  return `M${marginLeft},${y1}A${r},${r} 0,0,${y1 < y2 ? 1 : 0} ${marginLeft},${y2}`;
-};
+    // // Add an arc for each link using an arrow function to maintain the context of 'this'
+    // const arc = (d) => {
+    //   console.log("source: ", this.Y.get(d.source));
+    //   const y1 = this.Y.get(d.source);
+    //   const y2 = this.Y.get(d.target);
+    //   const r = Math.abs(y2 - y1) / 2;
+    //   return `M${marginLeft},${y1}A${r},${r} 0,0,${y1 < y2 ? 1 : 0} ${marginLeft},${y2}`;
+    // };
+    const arc = (d) => {
+      const y1 = this.Y.get(d.source);
+      const y2 = this.Y.get(d.target);
+      if (y1 === undefined || y2 === undefined) {
+        console.error("Undefined Y position:", d);
+        return ""; // Return an empty path if positions are undefined
+      }
+      const r = Math.abs(y2 - y1) / 2;
+      return `M${marginLeft},${y1}A${r},${r} 0,0,${
+        y1 < y2 ? 1 : 0
+      } ${marginLeft},${y2}`;
+    };
 
-
-this.path = this.svg
-  .insert("g", "*")
-  .attr("fill", "none")
-  .attr("stroke-opacity", 0.6)
-  .attr("stroke-width", 1.5)
-  .selectAll("path")
-  .data(links)
-  .join("path")
-  .attr("stroke", (d) => color(samegroup(d)))
-  .attr("d", arc);
+    this.path = this.svg
+      .insert("g", "*")
+      .attr("fill", "none")
+      .attr("stroke-opacity", 0.6)
+      .attr("stroke-width", 1.5)
+      .selectAll("path")
+      .data(links)
+      .join("path")
+      .attr("stroke", (d) => color(samegroup(d)))
+      .attr("d", arc);
     // this.path = this.svg
     //   .insert("g", "*")
     //   .attr("fill", "none")
