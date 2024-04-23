@@ -133,6 +133,16 @@
       .barchart-container {
         flex-direction: column;
       }
+      .links path {
+        fill: none;
+        stroke: #999;
+        stroke-opacity: 0.6;
+      }
+      .nodes circle {
+        fill: #d62333;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
     </style>
   </head>
   <body>
@@ -264,10 +274,31 @@
     <br>
     <svg id="word-length-histo"></svg>
 </div>
+<div class="arc-container">
+  <h1>Conversation Partners - Who Speaks to Who</h1>
+  <label>Filter By: </label>
+  <select class="arc-dropdown" id="arc-dropdown">
+      <option value="season_1" selected>Season 1</option>
+      <option value="season_2">Season 2</option>
+      <option value="season_3">Season 3</option>
+      <option value="season_4">Season 4</option>
+      <option value="season_5">Season 5</option>
+      <option value="season_6">Season 6</option>
+      <option value="season_7">Season 7</option>
+      <option value="season_8">Season 8</option>
+      <option value="season_9">Season 9</option>
+      <option value="season_10">Season 10</option>
+      <option value="season_11">Season 11</option>
+  </select>
+  <br>
+  <svg id="conversation-arc"></svg>
+  <div id="tooltip"></div>
+</div>
     <script src="js/d3.v6.min.js"></script>
     <script type="module" src="js/main.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/stacked-barchart.js"></script>
     <script src="js/word-length-histo.js"></script>
+    <script src="js/conversation-arc.js"></script>
   </body>
 </html>

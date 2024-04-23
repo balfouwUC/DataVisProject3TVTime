@@ -265,41 +265,87 @@ d3.json("data/frasier_transcripts/characters_by_episode.json")
     // Handle any errors that occur during loading
     console.error("Error loading the JSON file:", error);
   });
-=======
-characterImages.forEach(image => {
-  image.addEventListener('click', handleCharacterClick);
+characterImages.forEach((image) => {
+  image.addEventListener("click", handleCharacterClick);
 });
 
 // load the file for character importance for whole - barchart
-d3.json("data/frasier_transcripts/character_data_whole_season.json").then(function(data) {
-  const barchart = new Barchart(
-    {parentElement: "#barchart"}, // The selector for the container to hold the bar chart
-    data
+d3.json("data/frasier_transcripts/character_data_whole_season.json")
+  .then(function (data) {
+    const barchart = new Barchart(
+      { parentElement: "#barchart" }, // The selector for the container to hold the bar chart
+      data
     );
+  })
+  .catch(function (error) {
+    // Handle any errors that occur during loading
+    console.error("Error loading the JSON file:", error);
+  });
 
-}).catch(function(error) {
-  // Handle any errors that occur during loading
-  console.error("Error loading the JSON file:", error);
-});
-
-d3.json("data/frasier_transcripts/characters_by_season.json").then(function(data) {
-  console.log(data); 
-  const barchart = new StackedBarchart(
-    {parentElement: "#stacked-barchart"}, // The selector for the container to hold the bar chart
-    data
+d3.json("data/frasier_transcripts/characters_by_season.json")
+  .then(function (data) {
+    console.log(data);
+    const barchart = new StackedBarchart(
+      { parentElement: "#stacked-barchart" }, // The selector for the container to hold the bar chart
+      data
     );
+  })
+  .catch(function (error) {
+    // Handle any errors that occur during loading
+    console.error("Error loading the JSON file:", error);
+  });
 
-}).catch(function(error) {
-  // Handle any errors that occur during loading
-  console.error("Error loading the JSON file:", error);
-});
+d3.json("data/frasier_transcripts/full_conversation_data.json")
+  .then(function (data) {
+    const conversationHistogram = new WordLengthHisto(
+      { parentElement: "#word-length-histo" },
+      data
+    );
+  })
+  .catch(function (error) {
+    console.error("Error loading the JSON file:", error);
+  });
 
+d3.json("data/frasier_transcripts/conversations_by_season.json")
+  .then(function (data) {
+    const conversationArc = new ArcDiagram(
+      {
+        parentElement: "#conversation-arc",
+        width: 640,
+        step: 14,
+        marginTop: 20,
+        marginRight: 20,
+        marginBottom: 20,
+        marginLeft: 130,
+      },
+      data[document.getElementById("arc-dropdown").value]
+    );
+  })
+  .catch(function (error) {
+    console.error("Error loading the JSON file:", error);
+  });
 
-d3.json("data/frasier_transcripts/full_conversation_data.json").then(function(data){
-  const conversationHistogram = new WordLengthHisto(
-    {parentElement: "#word-length-histo"},
-    data
-  );
-}).catch(function(error){
-  console.error("Error loading the JSON file:", error);
+let selectSeason = document.getElementById("arc-dropdown");
+selectSeason.addEventListener("change", function () {
+  let selectedSeason = selectSeason.options[selectSeason.selectedIndex];
+  let selectedValue = selectedSeason.value;
+
+  d3.json("data/frasier_transcripts/conversations_by_season.json")
+    .then(function (data) {
+      const conversationArc = new ArcDiagram(
+        {
+          parentElement: "#conversation-arc",
+          width: 640,
+          step: 14,
+          marginTop: 20,
+          marginRight: 20,
+          marginBottom: 20,
+          marginLeft: 130,
+        },
+        data[document.getElementById("arc-dropdown").value]
+      );
+    })
+    .catch(function (error) {
+      console.error("Error loading the JSON file:", error);
+    });
 });
