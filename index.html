@@ -4,6 +4,10 @@
     <title>Exploring Frasier</title>
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
     <style>
+      .character.selected {
+        border: 5px solid black; 
+      }
+
       body {
         font-family: Arial, sans-serif;
       }
@@ -121,6 +125,46 @@
         flex-direction: column;
       }
     </style>
+    <script>
+      function selectCharacter(selectedLink) {
+        document.querySelectorAll('.character-link').forEach(link => {
+          link.style.fontWeight = 'normal'; 
+          link.style.color = 'black'; 
+          link.textContent = link.textContent.replace(" (SELECTED)", "");
+        });
+        selectedLink.style.fontWeight = 'bold'; 
+        selectedLink.style.color = 'red';      
+        selectedLink.textContent += " (SELECTED)"; 
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        const characterImages = document.querySelectorAll('.character img');
+        characterImages.forEach(image => {
+          image.addEventListener('click', function(event) {
+            resetLinkSelections();
+            selectImageCharacter(event.target.alt); 
+          });
+        });
+      });
+    
+      function selectCharacter(selectedLink) {
+        resetLinkSelections();
+        selectedLink.style.fontWeight = 'bold';
+        selectedLink.style.color = 'red';
+        selectedLink.textContent += " (SELECTED)";
+      }
+    
+      function resetLinkSelections() {
+        document.querySelectorAll('.character-link').forEach(link => {
+          link.style.fontWeight = 'normal';
+          link.style.color = 'black';
+          link.textContent = link.textContent.replace(" (SELECTED)", "");
+        });
+      }
+    
+      function selectImageCharacter(characterName) {
+      }
+      </script>
+      
   </head>
   <body>
 
@@ -138,62 +182,112 @@
     </div>
   </div>
 
+  <div class = "textbox">
+    <div style="display: flex;">
+      <div class="barchart-container" style="flex: 1;">
+        <h3>Characters and Dialogue Counts for All Seasons Combined</h3>
+        <svg id="barchart"></svg>
+      </div>
+      <div class="barchart-container" style="flex: 1;">
+        <h3>Characters and Dialogue Counts per Season</h3>
+        <svg id="stacked-barchart"></svg>
+      </div>
+    </div>
+    </div>
+    
+
   <div class ="textbox">
     <h2>Main Characters</h2>
     <div class="characters">
 
       <div class="character">
-        <img src="public/images/frasiercane.png" alt="frasier_cane">
+        <img src="public/images/frasiercane.png" alt="Frasier">
         <p>Frasier Cane</p>
       </div>
 
       <div class="character">
-        <img src="public/images/daphnemoon.png" alt="daphne_moon">
+        <img src="public/images/daphnemoon.png" alt="Daphne">
         <p>Daphne Moon</p>
       </div>
 
       <div class="character">
-        <img src="public/images/nilescrane.png" alt="niles_crane">
+        <img src="public/images/nilescrane.png" alt="Niles">
         <p>Niles Crane</p>
       </div>
 
       <div class="character">
-        <img src="public/images/rozdoyle.png" alt="roz_doyle">
+        <img src="public/images/rozdoyle.png" alt="Roz">
         <p>Roz Doyle</p>
       </div>
 
       <div class="character">
-        <img src="public/images/martincrane.png" alt="martin_crane">
+        <img src="public/images/martincrane.png" alt="Martin">
         <p>Martin Crane</p>
       </div>
 
       <div class="character">
-        <img src="public/images/eddie.png" alt="dddie">
+        <img src="public/images/eddie.png" alt="Eddie">
         <p>Eddie</p>
       </div>
 
       <div class="character">
-        <img src="public/images/bobbriscoe.png" alt="bob_briscoe">
-        <p>Bob Briscoe</p>
+        <img src="public/images/bobbriscoe.png" alt="Bulldog">
+        <p>Bob "Bulldog" Briscoe</p>
       </div>
     </div>
+    <h2>Other Characters</h2>
+    <ul>
+      <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Bebe Glazer</a></b></p></li>
+      <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Lilith Sternin</a></b></p></li>
+      <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Donny Douglas</a></b></p></li>
+      <li><p><b><a href="#" class="character-link" onclick="selectCharacter(this); return false;">Kenny Daly</a></b></p></li>
+    </ul>
   </div>  
 
-<div>
-  <div class="barchart-container">
-    <h1>Characters and Dialogue Counts for all seasons combined</h1>
-    <svg id="barchart"></svg>
-  </div>
-  <div class="barchart-container">
-    <h1>Characters and Dialogue counts per season</h1>
-    <svg id="stacked-barchart"></svg>
-  </div>
-</div>
+
+    <div class="textbox">
+      <div style="text-align: center; width: 100%; padding: 20px;">
+        <h3>Select Seasons</h3>
+        <select id="season-select" multiple style=" width: 10%; padding: 8px; height: auto; margin-bottom: 10px;">
+          <option value="1">Season 1</option>
+          <option value="2">Season 2</option>
+          <option value="3">Season 3</option>
+          <option value="4">Season 4</option>
+          <option value="5">Season 5</option>
+          <option value="6">Season 6</option>
+          <option value="7">Season 7</option>
+          <option value="8">Season 8</option>
+          <option value="9">Season 9</option>
+          <option value="10">Season 10</option>
+          <option value="11">Season 11</option>
+        </select><br>
+        <button id = "reset-button" style = "margin-top: 10px;">Reset Seasons</button>
+        </div>
+
+
+        <div style="display: flex;">
+          <div style="flex: 1;">
+            <h3>Most Frequently Said Words</h3>
+            <div id="word-cloud-word" style="width: 500px; height: 500px; margin: 10px;">
+              <p style="text-align: center; margin-top: 50px;">Select a character to view the visualizations.</p>
+            </div>
+          </div>
+          <div style="flex: 1;">
+            <h3>Most Frequently Said Phrases</h3>
+            <div id="word-cloud-phrase" style="width: 500px; height: 500px; margin: 10px;"></div>
+          </div>
+        </div>
+    </div>
+    
 
 
     <script src="js/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-cloud/build/d3.layout.cloud.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script type="module" src="js/main.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/stacked-barchart.js"></script>
+
   </body>
 </html>
