@@ -2,9 +2,6 @@
   "season_1": {
     "nodes": [
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Niles"
       },
       {
@@ -170,9 +167,6 @@
         "id": "Fletcher"
       },
       {
-        "id": "Mrs. Grey"
-      },
-      {
         "id": "Keith"
       },
       {
@@ -198,15 +192,6 @@
       },
       {
         "id": "Joey"
-      },
-      {
-        "id": "Outstanding Directorial Achievement in Comedy Series"
-      },
-      {
-        "id": "Outstanding Directing"
-      },
-      {
-        "id": "Outstanding Writing for a Comedy Series"
       },
       {
         "id": "Russell"
@@ -327,11 +312,6 @@
       }
     ],
     "links": [
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Niles",
-        "value": 1
-      },
       {
         "source": "Niles",
         "target": "Frasier",
@@ -944,11 +924,6 @@
       },
       {
         "source": "Roz",
-        "target": "Mrs. Grey",
-        "value": 1
-      },
-      {
-        "source": "Roz",
         "target": "Fletcher",
         "value": 2
       },
@@ -1205,11 +1180,6 @@
       {
         "source": "Martin",
         "target": "Fletcher",
-        "value": 1
-      },
-      {
-        "source": "Martin",
-        "target": "Mrs. Grey",
         "value": 1
       },
       {
@@ -1919,27 +1889,12 @@
       },
       {
         "source": "Fletcher",
-        "target": "Mrs. Grey",
-        "value": 1
-      },
-      {
-        "source": "Fletcher",
         "target": "Bebe",
         "value": 1
       },
       {
         "source": "Fletcher",
         "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Grey",
-        "target": "Fletcher",
-        "value": 2
-      },
-      {
-        "source": "Mrs. Grey",
-        "target": "Martin",
         "value": 1
       },
       {
@@ -2034,21 +1989,6 @@
       },
       {
         "source": "Joey",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directorial Achievement in Comedy Series",
-        "target": "Outstanding Directing",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directing",
-        "target": "Outstanding Writing for a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
         "target": "Frasier",
         "value": 1
       },
@@ -2410,13 +2350,7 @@
         "id": "Martin"
       },
       {
-        "id": "Frasier & Niles"
-      },
-      {
         "id": "Santa"
-      },
-      {
-        "id": "Girl Elf"
       },
       {
         "id": "Twinkle"
@@ -2554,12 +2488,6 @@
         "id": "Petyr"
       },
       {
-        "id": "Mr. Michaels"
-      },
-      {
-        "id": "Mrs. Michaels"
-      },
-      {
         "id": "Teller"
       },
       {
@@ -2582,12 +2510,6 @@
       },
       {
         "id": "Leader"
-      },
-      {
-        "id": "Mr. Grant"
-      },
-      {
-        "id": "Mrs. Grant"
       },
       {
         "id": "Principal"
@@ -2716,12 +2638,6 @@
         "id": "Mildred"
       },
       {
-        "id": "Old Daphne"
-      },
-      {
-        "id": "Old Niles"
-      },
-      {
         "id": "Supervisor"
       },
       {
@@ -2731,16 +2647,10 @@
         "id": "Together"
       },
       {
-        "id": "His Boys"
-      },
-      {
         "id": "Director"
       },
       {
         "id": "Committeeman"
-      },
-      {
-        "id": "Title Card"
       },
       {
         "id": "Ernie"
@@ -2768,12 +2678,6 @@
       },
       {
         "id": "George"
-      },
-      {
-        "id": "Man 2"
-      },
-      {
-        "id": "Woman 3"
       },
       {
         "id": "Driver"
@@ -2812,9 +2716,6 @@
         "id": "Jason"
       },
       {
-        "id": "Zombie 2"
-      },
-      {
         "id": "Todd"
       },
       {
@@ -2845,16 +2746,7 @@
         "id": "Woman"
       },
       {
-        "id": "Other Niles"
-      },
-      {
         "id": "Doctor"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
-      },
-      {
-        "id": "Best Edited Half-Hour Series For Television"
       },
       {
         "id": "Ling"
@@ -3050,16 +2942,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Mrs. Michaels",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Mr. Michaels",
-        "value": 4
-      },
-      {
-        "source": "Frasier",
         "target": "Teller",
         "value": 1
       },
@@ -3072,16 +2954,6 @@
         "source": "Frasier",
         "target": "Agent",
         "value": 3
-      },
-      {
-        "source": "Frasier",
-        "target": "Mr. Grant",
-        "value": 8
-      },
-      {
-        "source": "Frasier",
-        "target": "Mrs. Grant",
-        "value": 12
       },
       {
         "source": "Frasier",
@@ -3165,16 +3037,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Man 2",
-        "value": 2
-      },
-      {
-        "source": "Frasier",
-        "target": "Woman 3",
-        "value": 2
-      },
-      {
-        "source": "Frasier",
         "target": "Driver",
         "value": 1
       },
@@ -3196,11 +3058,6 @@
       {
         "source": "Frasier",
         "target": "Stu",
-        "value": 2
-      },
-      {
-        "source": "Frasier",
-        "target": "Zombie 2",
         "value": 2
       },
       {
@@ -3355,16 +3212,6 @@
       },
       {
         "source": "Roz",
-        "target": "Mrs. Grant",
-        "value": 1
-      },
-      {
-        "source": "Roz",
-        "target": "Mr. Grant",
-        "value": 3
-      },
-      {
-        "source": "Roz",
         "target": "Ben",
         "value": 2
       },
@@ -3452,11 +3299,6 @@
         "source": "Daphne",
         "target": "Frasier",
         "value": 110
-      },
-      {
-        "source": "Daphne",
-        "target": "Frasier & Niles",
-        "value": 1
       },
       {
         "source": "Daphne",
@@ -3960,11 +3802,6 @@
       },
       {
         "source": "Martin",
-        "target": "Mr. Michaels",
-        "value": 1
-      },
-      {
-        "source": "Martin",
         "target": "Teller",
         "value": 7
       },
@@ -4020,11 +3857,6 @@
       },
       {
         "source": "Martin",
-        "target": "His Boys",
-        "value": 1
-      },
-      {
-        "source": "Martin",
         "target": "Red",
         "value": 4
       },
@@ -4069,11 +3901,6 @@
         "value": 1
       },
       {
-        "source": "Frasier & Niles",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
         "source": "Santa",
         "target": "Santa",
         "value": 1
@@ -4085,16 +3912,6 @@
       },
       {
         "source": "Santa",
-        "target": "Girl Elf",
-        "value": 1
-      },
-      {
-        "source": "Santa",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Girl Elf",
         "target": "Roz",
         "value": 1
       },
@@ -4645,11 +4462,6 @@
       },
       {
         "source": "Gertrude",
-        "target": "Mrs. Grant",
-        "value": 1
-      },
-      {
-        "source": "Gertrude",
         "target": "Alice",
         "value": 1
       },
@@ -5119,21 +4931,6 @@
         "value": 8
       },
       {
-        "source": "Mr. Michaels",
-        "target": "Mrs. Michaels",
-        "value": 1
-      },
-      {
-        "source": "Mr. Michaels",
-        "target": "Frasier",
-        "value": 4
-      },
-      {
-        "source": "Mrs. Michaels",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
         "source": "Teller",
         "target": "Martin",
         "value": 8
@@ -5201,41 +4998,6 @@
       {
         "source": "Leader",
         "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Mr. Grant",
-        "target": "Roz",
-        "value": 3
-      },
-      {
-        "source": "Mr. Grant",
-        "target": "Frasier",
-        "value": 9
-      },
-      {
-        "source": "Mr. Grant",
-        "target": "Mrs. Grant",
-        "value": 4
-      },
-      {
-        "source": "Mrs. Grant",
-        "target": "Mr. Grant",
-        "value": 5
-      },
-      {
-        "source": "Mrs. Grant",
-        "target": "Frasier",
-        "value": 11
-      },
-      {
-        "source": "Mrs. Grant",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Grant",
-        "target": "Roz",
         "value": 1
       },
       {
@@ -5605,32 +5367,12 @@
       },
       {
         "source": "Mildred",
-        "target": "Old Daphne",
-        "value": 2
-      },
-      {
-        "source": "Mildred",
         "target": "Mildred",
         "value": 1
       },
       {
         "source": "Mildred",
         "target": "Bebe",
-        "value": 1
-      },
-      {
-        "source": "Old Daphne",
-        "target": "Mildred",
-        "value": 1
-      },
-      {
-        "source": "Old Daphne",
-        "target": "Old Niles",
-        "value": 1
-      },
-      {
-        "source": "Old Niles",
-        "target": "Mildred",
         "value": 1
       },
       {
@@ -5674,11 +5416,6 @@
         "value": 1
       },
       {
-        "source": "His Boys",
-        "target": "Roz",
-        "value": 1
-      },
-      {
         "source": "Director",
         "target": "Committeeman",
         "value": 1
@@ -5691,11 +5428,6 @@
       {
         "source": "Committeeman",
         "target": "Director",
-        "value": 1
-      },
-      {
-        "source": "Title Card",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -5791,31 +5523,6 @@
       {
         "source": "George",
         "target": "Driver",
-        "value": 1
-      },
-      {
-        "source": "Man 2",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Man 2",
-        "target": "Man 2",
-        "value": 1
-      },
-      {
-        "source": "Man 2",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
-        "source": "Woman 3",
-        "target": "Man 2",
-        "value": 1
-      },
-      {
-        "source": "Woman 3",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -5959,11 +5666,6 @@
         "value": 1
       },
       {
-        "source": "Zombie 2",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
         "source": "Todd",
         "target": "Frasier",
         "value": 3
@@ -6089,16 +5791,6 @@
         "value": 1
       },
       {
-        "source": "Woman",
-        "target": "Other Niles",
-        "value": 1
-      },
-      {
-        "source": "Other Niles",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Doctor",
         "target": "Niles",
         "value": 2
@@ -6111,16 +5803,6 @@
       {
         "source": "Doctor",
         "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Best Edited Half-Hour Series For Television",
-        "value": 1
-      },
-      {
-        "source": "Best Edited Half-Hour Series For Television",
-        "target": "Niles",
         "value": 1
       },
       {
@@ -6279,9 +5961,6 @@
         "id": "Patrolman"
       },
       {
-        "id": "Outstanding Art Direction for a Multi-Camera Series"
-      },
-      {
         "id": "Ronee"
       },
       {
@@ -6369,21 +6048,6 @@
         "id": "Harvest"
       },
       {
-        "id": "Date 1"
-      },
-      {
-        "id": "Date 2"
-      },
-      {
-        "id": "Date 3"
-      },
-      {
-        "id": "Date 4"
-      },
-      {
-        "id": "Date 5"
-      },
-      {
         "id": "Betty"
       },
       {
@@ -6391,9 +6055,6 @@
       },
       {
         "id": "Kim"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
       },
       {
         "id": "Julia"
@@ -6433,15 +6094,6 @@
       },
       {
         "id": "Lisbeth"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
-      },
-      {
-        "id": "Outstanding Writing for a Comedy Series"
-      },
-      {
-        "id": "Outstanding Guest Actor in a Comedy Series"
       },
       {
         "id": "Anne"
@@ -6492,9 +6144,6 @@
         "id": "Pilot"
       },
       {
-        "id": "Outstanding Multi-Camera Sound Mixing for a Series or Special"
-      },
-      {
         "id": "Alistair"
       },
       {
@@ -6516,13 +6165,7 @@
         "id": "Crowd"
       },
       {
-        "id": "Maitre d'"
-      },
-      {
         "id": "Owner"
-      },
-      {
-        "id": "Mrs. Gablyczyck"
       },
       {
         "id": "Liz"
@@ -6742,11 +6385,6 @@
       },
       {
         "source": "Martin",
-        "target": "Mrs. Gablyczyck",
-        "value": 1
-      },
-      {
-        "source": "Martin",
         "target": "Esteban",
         "value": 1
       },
@@ -6957,31 +6595,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Date 1",
-        "value": 7
-      },
-      {
-        "source": "Frasier",
-        "target": "Date 2",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Date 3",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Date 4",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Date 5",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Harvest",
         "value": 2
       },
@@ -7139,11 +6752,6 @@
         "source": "Frasier",
         "target": "Glinka",
         "value": 3
-      },
-      {
-        "source": "Frasier",
-        "target": "Maitre d'",
-        "value": 2
       },
       {
         "source": "Frasier",
@@ -7442,18 +7050,8 @@
       },
       {
         "source": "Niles",
-        "target": "Maitre d'",
-        "value": 2
-      },
-      {
-        "source": "Niles",
         "target": "Waiter",
         "value": 1
-      },
-      {
-        "source": "Niles",
-        "target": "Mrs. Gablyczyck",
-        "value": 6
       },
       {
         "source": "Niles",
@@ -7629,11 +7227,6 @@
         "source": "Daphne",
         "target": "Waiter",
         "value": 1
-      },
-      {
-        "source": "Daphne",
-        "target": "Mrs. Gablyczyck",
-        "value": 5
       },
       {
         "source": "Daphne",
@@ -8416,16 +8009,6 @@
         "value": 1
       },
       {
-        "source": "Outstanding Art Direction for a Multi-Camera Series",
-        "target": "Skyline",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Art Direction for a Multi-Camera Series",
-        "target": "Martin",
-        "value": 1
-      },
-      {
         "source": "Ronee",
         "target": "Martin",
         "value": 95
@@ -8483,11 +8066,6 @@
       {
         "source": "Ronee",
         "target": "Crowd",
-        "value": 1
-      },
-      {
-        "source": "Ronee",
-        "target": "Maitre d'",
         "value": 1
       },
       {
@@ -8971,41 +8549,6 @@
         "value": 2
       },
       {
-        "source": "Date 1",
-        "target": "Frasier",
-        "value": 7
-      },
-      {
-        "source": "Date 2",
-        "target": "Date 2",
-        "value": 1
-      },
-      {
-        "source": "Date 2",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Date 3",
-        "target": "Date 3",
-        "value": 2
-      },
-      {
-        "source": "Date 3",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Date 4",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Date 5",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Betty",
         "target": "Frasier",
         "value": 7
@@ -9084,11 +8627,6 @@
         "source": "Kim",
         "target": "Charlotte",
         "value": 2
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Julia",
-        "value": 1
       },
       {
         "source": "Julia",
@@ -9283,21 +8821,6 @@
       {
         "source": "Lisbeth",
         "target": "Lisbeth",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Outstanding Writing for a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Outstanding Guest Actor in a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Skyline",
         "value": 1
       },
       {
@@ -9521,11 +9044,6 @@
         "value": 1
       },
       {
-        "source": "Outstanding Multi-Camera Sound Mixing for a Series or Special",
-        "target": "Skyline",
-        "value": 1
-      },
-      {
         "source": "Alistair",
         "target": "Frasier",
         "value": 30
@@ -9621,48 +9139,8 @@
         "value": 1
       },
       {
-        "source": "Maitre d'",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Maitre d'",
-        "target": "Ronee",
-        "value": 1
-      },
-      {
-        "source": "Maitre d'",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
-        "source": "Maitre d'",
-        "target": "Martin",
-        "value": 1
-      },
-      {
         "source": "Owner",
         "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Gablyczyck",
-        "target": "Niles",
-        "value": 6
-      },
-      {
-        "source": "Mrs. Gablyczyck",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Gablyczyck",
-        "target": "Daphne",
-        "value": 4
-      },
-      {
-        "source": "Mrs. Gablyczyck",
-        "target": "Ann",
         "value": 1
       },
       {
@@ -10018,9 +9496,6 @@
         "id": "Another"
       },
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Man"
       },
       {
@@ -10075,12 +9550,6 @@
         "id": "Cindy"
       },
       {
-        "id": "Daphne & Martin"
-      },
-      {
-        "id": "Mrs. L"
-      },
-      {
         "id": "Steven"
       },
       {
@@ -10102,9 +9571,6 @@
         "id": "Ranger"
       },
       {
-        "id": "Outstanding Writing for a Comedy Series"
-      },
-      {
         "id": "Gretchen"
       },
       {
@@ -10121,12 +9587,6 @@
       },
       {
         "id": "Tom"
-      },
-      {
-        "id": "Outstanding Art Direction for a Series"
-      },
-      {
-        "id": "Maitre D'"
       },
       {
         "id": "Otto"
@@ -10150,37 +9610,16 @@
         "id": "Caroline"
       },
       {
-        "id": "Delivery Boy"
-      },
-      {
         "id": "Martin/Daphne"
       },
       {
         "id": "Daphne/Roz"
       },
       {
-        "id": "Outstanding Directorial Achievement in Comedy Series"
-      },
-      {
         "id": "Dorathea"
       },
       {
         "id": "Rita"
-      },
-      {
-        "id": "Matthew Barr"
-      },
-      {
-        "id": "Michael Lee"
-      },
-      {
-        "id": "Outstanding Directing for a Comedy Series"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
       },
       {
         "id": "Maggie"
@@ -10237,16 +9676,7 @@
         "id": "Yvette"
       },
       {
-        "id": "Mrs. Degas"
-      },
-      {
         "id": "Lilith"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
-      },
-      {
-        "id": "Outstanding Guest Actress in a Comedy Series"
       },
       {
         "id": "Brian"
@@ -10456,11 +9886,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Mrs. L",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Steven",
         "value": 1
       },
@@ -10521,11 +9946,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Maitre D'",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Otto",
         "value": 8
       },
@@ -10552,11 +9972,6 @@
       {
         "source": "Frasier",
         "target": "Caroline",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Delivery Boy",
         "value": 1
       },
       {
@@ -10641,11 +10056,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Mrs. Degas",
-        "value": 2
-      },
-      {
-        "source": "Frasier",
         "target": "Lilith",
         "value": 28
       },
@@ -10717,11 +10127,6 @@
       {
         "source": "Roz",
         "target": "Sheila",
-        "value": 1
-      },
-      {
-        "source": "Roz",
-        "target": "Daphne & Martin",
         "value": 1
       },
       {
@@ -10888,11 +10293,6 @@
         "source": "Martin",
         "target": "Bebe",
         "value": 2
-      },
-      {
-        "source": "Martin",
-        "target": "Maitre D'",
-        "value": 1
       },
       {
         "source": "Martin",
@@ -11455,11 +10855,6 @@
         "value": 1
       },
       {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Man",
         "target": "Frasier",
         "value": 14
@@ -11740,16 +11135,6 @@
         "value": 1
       },
       {
-        "source": "Daphne & Martin",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Mrs. L",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Steven",
         "target": "Frasier",
         "value": 2
@@ -11818,11 +11203,6 @@
         "source": "Ranger",
         "target": "Martin",
         "value": 3
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Frasier",
-        "value": 2
       },
       {
         "source": "Gretchen",
@@ -11975,16 +11355,6 @@
         "value": 5
       },
       {
-        "source": "Outstanding Art Direction for a Series",
-        "target": "Gil",
-        "value": 1
-      },
-      {
-        "source": "Maitre D'",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
         "source": "Otto",
         "target": "Frasier",
         "value": 5
@@ -12055,11 +11425,6 @@
         "value": 2
       },
       {
-        "source": "Delivery Boy",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Martin/Daphne",
         "target": "Frasier",
         "value": 1
@@ -12067,16 +11432,6 @@
       {
         "source": "Daphne/Roz",
         "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directorial Achievement in Comedy Series",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directorial Achievement in Comedy Series",
-        "target": "Outstanding Directing for a Comedy Series",
         "value": 1
       },
       {
@@ -12092,31 +11447,6 @@
       {
         "source": "Rita",
         "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Matthew Barr",
-        "target": "Michael Lee",
-        "value": 1
-      },
-      {
-        "source": "Michael Lee",
-        "target": "Outstanding Directorial Achievement in Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directing for a Comedy Series",
-        "target": "Episodic Comedy (TV)",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Outstanding Multi-Camera Picture Editing for a Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Outstanding Writing for a Comedy Series",
         "value": 1
       },
       {
@@ -12256,11 +11586,6 @@
       },
       {
         "source": "Madeline",
-        "target": "Mrs. Degas",
-        "value": 2
-      },
-      {
-        "source": "Madeline",
         "target": "Roz",
         "value": 1
       },
@@ -12286,11 +11611,6 @@
       },
       {
         "source": "Etienne",
-        "target": "Mrs. Degas",
-        "value": 5
-      },
-      {
-        "source": "Etienne",
         "target": "Etienne",
         "value": 3
       },
@@ -12307,26 +11627,6 @@
       {
         "source": "Yvette",
         "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Degas",
-        "target": "Yvette",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Degas",
-        "target": "Etienne",
-        "value": 4
-      },
-      {
-        "source": "Mrs. Degas",
-        "target": "Frasier",
-        "value": 3
-      },
-      {
-        "source": "Mrs. Degas",
-        "target": "Madeline",
         "value": 1
       },
       {
@@ -12353,21 +11653,6 @@
         "source": "Lilith",
         "target": "Niles",
         "value": 2
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Outstanding Guest Actress in a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Outstanding Guest Actress in a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Brian",
@@ -12437,9 +11722,6 @@
         "id": "Driver"
       },
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Gerard"
       },
       {
@@ -12452,12 +11734,6 @@
         "id": "Ralph"
       },
       {
-        "id": "Patron #1"
-      },
-      {
-        "id": "Patron #2"
-      },
-      {
         "id": "Patron#1"
       },
       {
@@ -12468,9 +11744,6 @@
       },
       {
         "id": "Henry"
-      },
-      {
-        "id": "Outstanding Writing for a Comedy Series"
       },
       {
         "id": "Marlene"
@@ -12501,9 +11774,6 @@
       },
       {
         "id": "Ned"
-      },
-      {
-        "id": "Dr. Creane"
       },
       {
         "id": "Mary-Ann"
@@ -12641,19 +11911,7 @@
         "id": "Moderator"
       },
       {
-        "id": "Man 1"
-      },
-      {
-        "id": "Man 2"
-      },
-      {
         "id": "Collector"
-      },
-      {
-        "id": "Woman 1"
-      },
-      {
-        "id": "Woman 2"
       },
       {
         "id": "Manu"
@@ -12707,9 +11965,6 @@
         "id": "Nurse"
       },
       {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
-      },
-      {
         "id": "Marilyn"
       },
       {
@@ -12731,12 +11986,6 @@
         "id": "Frasier/Kate"
       },
       {
-        "id": "Best-Edited Half-Hour Series for Television"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
-      },
-      {
         "id": "Deirdre"
       },
       {
@@ -12750,9 +11999,6 @@
       },
       {
         "id": "Marta"
-      },
-      {
-        "id": "Frasier[_reading_] \"Dear Dad, Frasier, & Daphne"
       },
       {
         "id": "Santa"
@@ -12829,11 +12075,6 @@
         "source": "Frasier",
         "target": "Bob",
         "value": 35
-      },
-      {
-        "source": "Frasier",
-        "target": "Patron #2",
-        "value": 2
       },
       {
         "source": "Frasier",
@@ -13039,16 +12280,6 @@
         "source": "Frasier",
         "target": "Moderator",
         "value": 3
-      },
-      {
-        "source": "Frasier",
-        "target": "Man 1",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Man 2",
-        "value": 1
       },
       {
         "source": "Frasier",
@@ -13288,11 +12519,6 @@
       {
         "source": "Roz",
         "target": "Collector",
-        "value": 1
-      },
-      {
-        "source": "Roz",
-        "target": "Man 2",
         "value": 1
       },
       {
@@ -13626,11 +12852,6 @@
         "value": 4
       },
       {
-        "source": "Daphne",
-        "target": "Frasier[_reading_] \"Dear Dad, Frasier, & Daphne",
-        "value": 1
-      },
-      {
         "source": "Martin",
         "target": "Niles",
         "value": 152
@@ -13791,16 +13012,6 @@
         "value": 1
       },
       {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Gerard",
         "target": "Frasier",
         "value": 2
@@ -13857,11 +13068,6 @@
       },
       {
         "source": "Bob",
-        "target": "Patron #1",
-        "value": 1
-      },
-      {
-        "source": "Bob",
         "target": "Patron#1",
         "value": 1
       },
@@ -13872,21 +13078,6 @@
       },
       {
         "source": "Ralph",
-        "target": "Bob",
-        "value": 1
-      },
-      {
-        "source": "Patron #1",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Patron #2",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Patron #2",
         "target": "Bob",
         "value": 1
       },
@@ -13934,11 +13125,6 @@
         "source": "Henry",
         "target": "Frasier",
         "value": 3
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Marlene",
@@ -14032,11 +13218,6 @@
       },
       {
         "source": "Stan",
-        "target": "Dr. Creane",
-        "value": 1
-      },
-      {
-        "source": "Stan",
         "target": "Diane",
         "value": 3
       },
@@ -14061,31 +13242,6 @@
         "value": 1
       },
       {
-        "source": "Ned",
-        "target": "Dr. Creane",
-        "value": 3
-      },
-      {
-        "source": "Dr. Creane",
-        "target": "Stan",
-        "value": 2
-      },
-      {
-        "source": "Dr. Creane",
-        "target": "Mary-Ann",
-        "value": 3
-      },
-      {
-        "source": "Dr. Creane",
-        "target": "Dr. Creane",
-        "value": 1
-      },
-      {
-        "source": "Dr. Creane",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Mary-Ann",
         "target": "All",
         "value": 1
@@ -14094,11 +13250,6 @@
         "source": "Mary-Ann",
         "target": "Stan",
         "value": 1
-      },
-      {
-        "source": "Mary-Ann",
-        "target": "Dr. Creane",
-        "value": 2
       },
       {
         "source": "All",
@@ -14616,39 +13767,9 @@
         "value": 1
       },
       {
-        "source": "Man 1",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Man 2",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Man 2",
-        "target": "Woman 1",
-        "value": 2
-      },
-      {
         "source": "Collector",
         "target": "Roz",
         "value": 2
-      },
-      {
-        "source": "Woman 1",
-        "target": "Woman 2",
-        "value": 1
-      },
-      {
-        "source": "Woman 1",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Woman 2",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Manu",
@@ -14659,11 +13780,6 @@
         "source": "Manu",
         "target": "Frasier",
         "value": 17
-      },
-      {
-        "source": "Manu",
-        "target": "Man 2",
-        "value": 1
       },
       {
         "source": "Manu",
@@ -14796,11 +13912,6 @@
         "value": 1
       },
       {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Marilyn",
         "target": "Frasier",
         "value": 3
@@ -14866,16 +13977,6 @@
         "value": 1
       },
       {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Outstanding Multi-Camera Picture Editing for a Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
         "source": "Deirdre",
         "target": "Frasier",
         "value": 2
@@ -14916,11 +14017,6 @@
         "value": 4
       },
       {
-        "source": "Frasier[_reading_] \"Dear Dad, Frasier, & Daphne",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
         "source": "Santa",
         "target": "Martin",
         "value": 2
@@ -14959,9 +14055,6 @@
   },
   "season_4": {
     "nodes": [
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
-      },
       {
         "id": "Frasier"
       },
@@ -15021,12 +14114,6 @@
       },
       {
         "id": "Beth"
-      },
-      {
-        "id": "Outstanding Directing for a Comedy Series"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
       },
       {
         "id": "Christine"
@@ -15132,9 +14219,6 @@
       },
       {
         "id": "Marta"
-      },
-      {
-        "id": "Maitre �D"
       },
       {
         "id": "Waiter"
@@ -15248,18 +14332,10 @@
         "id": "Greg"
       },
       {
-        "id": "Outstanding Guest Actress in a Comedy Series"
-      },
-      {
         "id": "Maureen"
       }
     ],
     "links": [
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Frasier",
-        "value": 1
-      },
       {
         "source": "Frasier",
         "target": "Niles",
@@ -15504,11 +14580,6 @@
         "source": "Frasier",
         "target": "Marta",
         "value": 7
-      },
-      {
-        "source": "Frasier",
-        "target": "Maitre �D",
-        "value": 4
       },
       {
         "source": "Frasier",
@@ -16471,16 +15542,6 @@
         "value": 3
       },
       {
-        "source": "Outstanding Directing for a Comedy Series",
-        "target": "Outstanding Multi-Camera Picture Editing for a Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
         "source": "Christine",
         "target": "Roz",
         "value": 1
@@ -16976,21 +16037,6 @@
         "value": 1
       },
       {
-        "source": "Maitre �D",
-        "target": "Frasier",
-        "value": 3
-      },
-      {
-        "source": "Maitre �D",
-        "target": "Maitre �D",
-        "value": 1
-      },
-      {
-        "source": "Maitre �D",
-        "target": "Husband",
-        "value": 1
-      },
-      {
         "source": "Waiter",
         "target": "Frasier",
         "value": 4
@@ -17416,11 +16462,6 @@
         "value": 3
       },
       {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Maureen",
         "target": "Niles",
         "value": 2
@@ -17439,12 +16480,6 @@
   },
   "season_5": {
     "nodes": [
-      {
-        "id": "Young Frasier"
-      },
-      {
-        "id": "Young Niles"
-      },
       {
         "id": "Niles"
       },
@@ -17542,9 +16577,6 @@
         "id": "Janice"
       },
       {
-        "id": "Outstanding Writing for a Comedy Series"
-      },
-      {
         "id": "Connie"
       },
       {
@@ -17554,25 +16586,10 @@
         "id": "Guy"
       },
       {
-        "id": "Best-Edited Half-Hour Series for Television"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
-      },
-      {
-        "id": "Funniest Female Guest Appearance in a TV Series"
-      },
-      {
         "id": "Betsy"
       },
       {
         "id": "Lilith"
-      },
-      {
-        "id": "Outstanding Guest Actress in a Comedy Series"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
       },
       {
         "id": "Nikos"
@@ -17617,16 +16634,7 @@
         "id": "Frasier/Bulldog"
       },
       {
-        "id": "Customer 1"
-      },
-      {
-        "id": "Customer 2"
-      },
-      {
         "id": "Producer"
-      },
-      {
-        "id": "Woman 1"
       },
       {
         "id": "O'Rourke"
@@ -17651,9 +16659,6 @@
       },
       {
         "id": "Frasier/Daphne"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
       },
       {
         "id": "Joanne"
@@ -17681,9 +16686,6 @@
       },
       {
         "id": "Paula"
-      },
-      {
-        "id": "Frasier You know, here's an idea, Niles"
       },
       {
         "id": "Machine"
@@ -17741,12 +16743,6 @@
       },
       {
         "id": "Joe"
-      },
-      {
-        "id": "Outstanding Directorial Achievement in a Comedy Series"
-      },
-      {
-        "id": "Outstanding Costume Design for a Series"
       },
       {
         "id": "Eve"
@@ -17821,12 +16817,6 @@
         "id": "Customer"
       },
       {
-        "id": "Waiter 1"
-      },
-      {
-        "id": "Waiter 2"
-      },
-      {
         "id": "Secretary"
       },
       {
@@ -17851,12 +16841,6 @@
         "id": "Albert/Doris"
       },
       {
-        "id": "Woman In Hall"
-      },
-      {
-        "id": "Man In Hall"
-      },
-      {
         "id": "Sally"
       },
       {
@@ -17870,26 +16854,6 @@
       }
     ],
     "links": [
-      {
-        "source": "Young Frasier",
-        "target": "Young Niles",
-        "value": 7
-      },
-      {
-        "source": "Young Frasier",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Young Niles",
-        "target": "Young Frasier",
-        "value": 6
-      },
-      {
-        "source": "Young Niles",
-        "target": "Credits",
-        "value": 1
-      },
       {
         "source": "Niles",
         "target": "Frasier",
@@ -18017,11 +16981,6 @@
       },
       {
         "source": "Niles",
-        "target": "Frasier You know, here's an idea, Niles",
-        "value": 1
-      },
-      {
-        "source": "Niles",
         "target": "Paula",
         "value": 2
       },
@@ -18097,16 +17056,6 @@
       },
       {
         "source": "Niles",
-        "target": "Waiter 1",
-        "value": 4
-      },
-      {
-        "source": "Niles",
-        "target": "Waiter 2",
-        "value": 1
-      },
-      {
-        "source": "Niles",
         "target": "Masseur",
         "value": 1
       },
@@ -18129,11 +17078,6 @@
         "source": "Niles",
         "target": "Repairman",
         "value": 3
-      },
-      {
-        "source": "Niles",
-        "target": "Woman In Hall",
-        "value": 1
       },
       {
         "source": "Frasier",
@@ -18193,11 +17137,6 @@
       {
         "source": "Frasier",
         "target": "Freddy",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Young Frasier",
         "value": 1
       },
       {
@@ -19346,16 +18285,6 @@
         "value": 1
       },
       {
-        "source": "Waitress",
-        "target": "Waiter 2",
-        "value": 5
-      },
-      {
-        "source": "Waitress",
-        "target": "Waiter 1",
-        "value": 1
-      },
-      {
         "source": "Ben",
         "target": "Frasier",
         "value": 18
@@ -19501,11 +18430,6 @@
         "value": 5
       },
       {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Connie",
         "target": "Roz",
         "value": 2
@@ -19571,31 +18495,6 @@
         "value": 6
       },
       {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Outstanding Multi-Camera Picture Editing for a Series",
-        "value": 1
-      },
-      {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Funniest Female Guest Appearance in a TV Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Peri",
-        "value": 1
-      },
-      {
-        "source": "Funniest Female Guest Appearance in a TV Series",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Betsy",
         "target": "Frasier",
         "value": 2
@@ -19624,16 +18523,6 @@
         "source": "Lilith",
         "target": "Waiter",
         "value": 6
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Nikos",
@@ -19837,18 +18726,8 @@
       },
       {
         "source": "Bulldog",
-        "target": "Customer 1",
-        "value": 1
-      },
-      {
-        "source": "Bulldog",
         "target": "Niles",
         "value": 5
-      },
-      {
-        "source": "Bulldog",
-        "target": "Woman 1",
-        "value": 1
       },
       {
         "source": "Bulldog",
@@ -19906,27 +18785,12 @@
         "value": 1
       },
       {
-        "source": "Customer 1",
-        "target": "Customer 2",
-        "value": 1
-      },
-      {
-        "source": "Customer 2",
-        "target": "Bulldog",
-        "value": 1
-      },
-      {
         "source": "Producer",
         "target": "Frasier",
         "value": 1
       },
       {
         "source": "Producer",
-        "target": "Bulldog",
-        "value": 1
-      },
-      {
-        "source": "Woman 1",
         "target": "Bulldog",
         "value": 1
       },
@@ -20008,11 +18872,6 @@
       {
         "source": "Frasier/Daphne",
         "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Joanne",
         "value": 1
       },
       {
@@ -20158,11 +19017,6 @@
       {
         "source": "Paula",
         "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Frasier You know, here's an idea, Niles",
-        "target": "Niles",
         "value": 1
       },
       {
@@ -20381,16 +19235,6 @@
         "value": 7
       },
       {
-        "source": "Outstanding Directorial Achievement in a Comedy Series",
-        "target": "Outstanding Costume Design for a Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Costume Design for a Series",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Eve",
         "target": "Roz",
         "value": 1
@@ -20596,31 +19440,6 @@
         "value": 1
       },
       {
-        "source": "Customer",
-        "target": "Waiter 1",
-        "value": 1
-      },
-      {
-        "source": "Waiter 1",
-        "target": "Waitress",
-        "value": 4
-      },
-      {
-        "source": "Waiter 1",
-        "target": "Niles",
-        "value": 2
-      },
-      {
-        "source": "Waiter 2",
-        "target": "Niles",
-        "value": 5
-      },
-      {
-        "source": "Waiter 2",
-        "target": "Waitress",
-        "value": 1
-      },
-      {
         "source": "Secretary",
         "target": "Niles",
         "value": 1
@@ -20716,21 +19535,6 @@
         "value": 1
       },
       {
-        "source": "Woman In Hall",
-        "target": "Man In Hall",
-        "value": 1
-      },
-      {
-        "source": "Woman In Hall",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Man In Hall",
-        "target": "Woman In Hall",
-        "value": 1
-      },
-      {
         "source": "Sally",
         "target": "Frasier",
         "value": 1
@@ -20759,18 +19563,6 @@
   },
   "season_6": {
     "nodes": [
-      {
-        "id": "Nicholas Hartley"
-      },
-      {
-        "id": "Outstanding Writing for a Comedy Series"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
-      },
-      {
-        "id": "Outstanding Directorial Achievement in Comedy Series"
-      },
       {
         "id": "Roz"
       },
@@ -20853,9 +19645,6 @@
         "id": "Credits"
       },
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Audrey"
       },
       {
@@ -20871,12 +19660,6 @@
         "id": "Gil"
       },
       {
-        "id": "Best-Edited Half-Hour Series for Television"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
-      },
-      {
         "id": "Cassandra"
       },
       {
@@ -20886,9 +19669,6 @@
         "id": "Mario"
       },
       {
-        "id": "Maitre d'"
-      },
-      {
         "id": "Maria"
       },
       {
@@ -20896,9 +19676,6 @@
       },
       {
         "id": "Whalen"
-      },
-      {
-        "id": "Frasier Oh God, you haven't even heard the worst yet, Niles"
       },
       {
         "id": "Allison"
@@ -20961,12 +19738,6 @@
         "id": "Waitress"
       },
       {
-        "id": "Funniest Female Guest Appearance in a TV Series"
-      },
-      {
-        "id": "Outstanding Guest Actress in a Comedy Series"
-      },
-      {
         "id": "Nora"
       },
       {
@@ -20986,9 +19757,6 @@
       },
       {
         "id": "Woodson"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
       },
       {
         "id": "Kit"
@@ -21013,15 +19781,6 @@
       },
       {
         "id": "Checkmate"
-      },
-      {
-        "id": "Checkmate 1"
-      },
-      {
-        "id": "Checkmate 2"
-      },
-      {
-        "id": "Checkmate 3"
       },
       {
         "id": "Checkmates"
@@ -21063,9 +19822,6 @@
         "id": "Madeline"
       },
       {
-        "id": "Matthew Barr"
-      },
-      {
         "id": "Draper"
       },
       {
@@ -21103,36 +19859,6 @@
       }
     ],
     "links": [
-      {
-        "source": "Nicholas Hartley",
-        "target": "Outstanding Writing for a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Nicholas Hartley",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Episodic Comedy (TV)",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Outstanding Directorial Achievement in Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directorial Achievement in Comedy Series",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Directorial Achievement in Comedy Series",
-        "target": "Outstanding Guest Actress in a Comedy Series",
-        "value": 1
-      },
       {
         "source": "Roz",
         "target": "Frasier",
@@ -21571,11 +20297,6 @@
       {
         "source": "Frasier",
         "target": "Checkmate",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Checkmate 1",
         "value": 1
       },
       {
@@ -22055,11 +20776,6 @@
       },
       {
         "source": "Daphne",
-        "target": "Maitre d'",
-        "value": 1
-      },
-      {
-        "source": "Daphne",
         "target": "Credits",
         "value": 1
       },
@@ -22180,11 +20896,6 @@
       },
       {
         "source": "Martin",
-        "target": "Maitre d'",
-        "value": 1
-      },
-      {
-        "source": "Martin",
         "target": "Waiter",
         "value": 2
       },
@@ -22202,11 +20913,6 @@
         "source": "Martin",
         "target": "CREDITS",
         "value": 2
-      },
-      {
-        "source": "Martin",
-        "target": "Frasier Oh God, you haven't even heard the worst yet, Niles",
-        "value": 1
       },
       {
         "source": "Martin",
@@ -22540,11 +21246,6 @@
       },
       {
         "source": "Credits",
-        "target": "Maitre d'",
-        "value": 1
-      },
-      {
-        "source": "Credits",
         "target": "Martin",
         "value": 2
       },
@@ -22556,11 +21257,6 @@
       {
         "source": "Credits",
         "target": "CREDITS",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Audrey",
         "value": 1
       },
       {
@@ -22664,16 +21360,6 @@
         "value": 1
       },
       {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Cassandra",
         "target": "Frasier",
         "value": 74
@@ -22707,11 +21393,6 @@
         "source": "Mario",
         "target": "Cassandra",
         "value": 1
-      },
-      {
-        "source": "Maitre d'",
-        "target": "Daphne",
-        "value": 2
       },
       {
         "source": "Maria",
@@ -22782,11 +21463,6 @@
         "source": "Whalen",
         "target": "Donny",
         "value": 2
-      },
-      {
-        "source": "Frasier Oh God, you haven't even heard the worst yet, Niles",
-        "target": "Martin",
-        "value": 1
       },
       {
         "source": "Allison",
@@ -23059,21 +21735,6 @@
         "value": 3
       },
       {
-        "source": "Funniest Female Guest Appearance in a TV Series",
-        "target": "Outstanding Directorial Achievement in Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Outstanding Guest Actress in a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Nora",
         "target": "Frasier",
         "value": 21
@@ -23169,11 +21830,6 @@
         "value": 3
       },
       {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Roz",
-        "value": 1
-      },
-      {
         "source": "Kit",
         "target": "Roz",
         "value": 3
@@ -23265,21 +21921,6 @@
       },
       {
         "source": "Checkmate",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Checkmate 1",
-        "target": "Checkmate 2",
-        "value": 1
-      },
-      {
-        "source": "Checkmate 2",
-        "target": "Checkmate 3",
-        "value": 1
-      },
-      {
-        "source": "Checkmate 3",
         "target": "Frasier",
         "value": 1
       },
@@ -23461,11 +22102,6 @@
       {
         "source": "Madeline",
         "target": "Nancy",
-        "value": 1
-      },
-      {
-        "source": "Matthew Barr",
-        "target": "Nicholas Hartley",
         "value": 1
       },
       {
@@ -23661,9 +22297,6 @@
         "id": "Niles"
       },
       {
-        "id": "Outstanding Directorial Achievement in a Comedy Series"
-      },
-      {
         "id": "Kenny"
       },
       {
@@ -23715,31 +22348,16 @@
         "id": "Tiffany"
       },
       {
-        "id": "Soloist 1"
-      },
-      {
-        "id": "Soloist 2"
-      },
-      {
-        "id": "Soloist 3"
-      },
-      {
         "id": "Choir"
       },
       {
         "id": "Vocalists"
       },
       {
-        "id": "Outstanding Guest Actress in a Comedy Series"
-      },
-      {
         "id": "Lorna"
       },
       {
         "id": "Woman"
-      },
-      {
-        "id": "Episodic Comedy (TV)"
       },
       {
         "id": "Emily"
@@ -23749,12 +22367,6 @@
       },
       {
         "id": "Edward"
-      },
-      {
-        "id": "30 Minute Category"
-      },
-      {
-        "id": "Outstanding Supporting Actress in a Comedy Series"
       },
       {
         "id": "Chuck"
@@ -23820,19 +22432,10 @@
         "id": "Stefano"
       },
       {
-        "id": "Maitre D'"
-      },
-      {
         "id": "Girl"
       },
       {
         "id": "Mama"
-      },
-      {
-        "id": "Best-Edited Half-Hour Series for Television"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
       },
       {
         "id": "McCaskill"
@@ -23854,12 +22457,6 @@
       },
       {
         "id": "Dad"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
-      },
-      {
-        "id": "Outstanding Writing for a Comedy Series"
       },
       {
         "id": "Daphne/Niles/Roz"
@@ -23923,9 +22520,6 @@
       },
       {
         "id": "Presenter"
-      },
-      {
-        "id": "Sara Briggs"
       },
       {
         "id": "Appraiser"
@@ -24232,11 +22826,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Soloist 1",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Lorna",
         "value": 55
       },
@@ -24347,11 +22936,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Maitre D'",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Girl",
         "value": 3
       },
@@ -24434,11 +23018,6 @@
         "source": "Frasier",
         "target": "Presenter",
         "value": 2
-      },
-      {
-        "source": "Frasier",
-        "target": "Sara Briggs",
-        "value": 1
       },
       {
         "source": "Frasier",
@@ -24802,11 +23381,6 @@
       },
       {
         "source": "Niles",
-        "target": "Soloist 1",
-        "value": 1
-      },
-      {
-        "source": "Niles",
         "target": "Kenny",
         "value": 2
       },
@@ -24853,11 +23427,6 @@
       {
         "source": "Niles",
         "target": "Mia",
-        "value": 1
-      },
-      {
-        "source": "Niles",
-        "target": "Maitre D'",
         "value": 1
       },
       {
@@ -24939,11 +23508,6 @@
         "source": "Niles",
         "target": "Freddie",
         "value": 10
-      },
-      {
-        "source": "Outstanding Directorial Achievement in a Comedy Series",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Kenny",
@@ -25226,41 +23790,6 @@
         "value": 5
       },
       {
-        "source": "Soloist 1",
-        "target": "Soloist 2",
-        "value": 2
-      },
-      {
-        "source": "Soloist 1",
-        "target": "Choir",
-        "value": 3
-      },
-      {
-        "source": "Soloist 1",
-        "target": "Soloist 3",
-        "value": 1
-      },
-      {
-        "source": "Soloist 2",
-        "target": "Soloist 3",
-        "value": 2
-      },
-      {
-        "source": "Soloist 2",
-        "target": "Soloist 1",
-        "value": 1
-      },
-      {
-        "source": "Soloist 3",
-        "target": "Soloist 1",
-        "value": 3
-      },
-      {
-        "source": "Choir",
-        "target": "Soloist 2",
-        "value": 1
-      },
-      {
         "source": "Choir",
         "target": "Niles",
         "value": 1
@@ -25283,11 +23812,6 @@
       {
         "source": "Vocalists",
         "target": "Credits",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actress in a Comedy Series",
-        "target": "Roz",
         "value": 1
       },
       {
@@ -25338,16 +23862,6 @@
       {
         "source": "Woman",
         "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Episodic Comedy (TV)",
-        "target": "Outstanding Sound Mixing for a Comedy Series or Special",
         "value": 1
       },
       {
@@ -25424,16 +23938,6 @@
         "source": "Edward",
         "target": "Niles",
         "value": 2
-      },
-      {
-        "source": "30 Minute Category",
-        "target": "Outstanding Supporting Actress in a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Supporting Actress in a Comedy Series",
-        "target": "Roz",
-        "value": 1
       },
       {
         "source": "Chuck",
@@ -25741,16 +24245,6 @@
         "value": 1
       },
       {
-        "source": "Maitre D'",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Maitre D'",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Girl",
         "target": "Frasier",
         "value": 3
@@ -25764,21 +24258,6 @@
         "source": "Mama",
         "target": "Stefano",
         "value": 2
-      },
-      {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Outstanding Multi-Camera Picture Editing for a Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "McCaskill",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Episodic Comedy (TV)",
-        "value": 1
       },
       {
         "source": "McCaskill",
@@ -25913,16 +24392,6 @@
       {
         "source": "Dad",
         "target": "Daphne",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Outstanding Writing for a Comedy Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Writing for a Comedy Series",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -26211,16 +24680,6 @@
         "value": 1
       },
       {
-        "source": "Sara Briggs",
-        "target": "Sara Briggs",
-        "value": 4
-      },
-      {
-        "source": "Sara Briggs",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Appraiser",
         "target": "Martin",
         "value": 4
@@ -26422,9 +24881,6 @@
         "id": "Clerk"
       },
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Klingon"
       },
       {
@@ -26476,16 +24932,10 @@
         "id": "Rachel"
       },
       {
-        "id": "Mrs. Daly"
-      },
-      {
         "id": "Janice"
       },
       {
         "id": "Waiter"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
       },
       {
         "id": "Woman"
@@ -26530,9 +24980,6 @@
         "id": "Guest"
       },
       {
-        "id": "2nd Guest"
-      },
-      {
         "id": "Penelope"
       },
       {
@@ -26569,22 +25016,10 @@
         "id": "Frasier/Niles"
       },
       {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
-      },
-      {
-        "id": "Best-Edited Half-Hour Series for Television"
-      },
-      {
         "id": "Patient"
       },
       {
         "id": "Both"
-      },
-      {
-        "id": "Outstanding Directorial Achievement in a Comedy Series"
-      },
-      {
-        "id": "Outstanding Cinematography for a Multi-Camera Series"
       },
       {
         "id": "Mel"
@@ -26617,9 +25052,6 @@
         "id": "All"
       },
       {
-        "id": "Guest 1"
-      },
-      {
         "id": "Neil"
       },
       {
@@ -26627,9 +25059,6 @@
       },
       {
         "id": "Friend"
-      },
-      {
-        "id": "Maitre D'"
       },
       {
         "id": "Jim"
@@ -26641,25 +25070,7 @@
         "id": "Joanne"
       },
       {
-        "id": "Mrs. Smolenski"
-      },
-      {
-        "id": "Mr. Smolenski"
-      },
-      {
         "id": "David"
-      },
-      {
-        "id": "1st BM"
-      },
-      {
-        "id": "2nd BM"
-      },
-      {
-        "id": "3rd BM"
-      },
-      {
-        "id": "Outstanding Art Direction for a Series"
       },
       {
         "id": "Hostess"
@@ -26723,12 +25134,6 @@
       },
       {
         "id": "Abby"
-      },
-      {
-        "id": "Best Man"
-      },
-      {
-        "id": "Mrs. Douglas"
       },
       {
         "id": "Technician"
@@ -26897,11 +25302,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Mrs. Daly",
-        "value": 29
-      },
-      {
-        "source": "Frasier",
         "target": "Waiter",
         "value": 4
       },
@@ -26944,11 +25344,6 @@
         "source": "Frasier",
         "target": "Guest",
         "value": 4
-      },
-      {
-        "source": "Frasier",
-        "target": "2nd Guest",
-        "value": 1
       },
       {
         "source": "Frasier",
@@ -27033,11 +25428,6 @@
       {
         "source": "Frasier",
         "target": "Jim",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Mrs. Smolenski",
         "value": 1
       },
       {
@@ -27302,11 +25692,6 @@
       },
       {
         "source": "Roz",
-        "target": "Maitre D'",
-        "value": 1
-      },
-      {
-        "source": "Roz",
         "target": "Friend",
         "value": 2
       },
@@ -27492,11 +25877,6 @@
       },
       {
         "source": "Martin",
-        "target": "3rd BM",
-        "value": 1
-      },
-      {
-        "source": "Martin",
         "target": "Hostess",
         "value": 1
       },
@@ -27639,11 +26019,6 @@
         "source": "Daphne",
         "target": "Donny",
         "value": 10
-      },
-      {
-        "source": "Daphne",
-        "target": "Mrs. Douglas",
-        "value": 1
       },
       {
         "source": "Niles",
@@ -27941,16 +26316,6 @@
         "value": 3
       },
       {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Skyline",
-        "value": 1
-      },
-      {
         "source": "Klingon",
         "target": "Frasier",
         "value": 1
@@ -28221,49 +26586,9 @@
         "value": 1
       },
       {
-        "source": "Mrs. Daly",
-        "target": "Janice",
-        "value": 4
-      },
-      {
-        "source": "Mrs. Daly",
-        "target": "Mrs. Daly",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Daly",
-        "target": "Waiter",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Daly",
-        "target": "Frasier",
-        "value": 27
-      },
-      {
-        "source": "Mrs. Daly",
-        "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Daly",
-        "target": "Kenny",
-        "value": 1
-      },
-      {
-        "source": "Janice",
-        "target": "Mrs. Daly",
-        "value": 4
-      },
-      {
         "source": "Waiter",
         "target": "Frasier",
         "value": 4
-      },
-      {
-        "source": "Waiter",
-        "target": "Mrs. Daly",
-        "value": 1
       },
       {
         "source": "Waiter",
@@ -28273,11 +26598,6 @@
       {
         "source": "Waiter",
         "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -28419,11 +26739,6 @@
         "source": "Guest",
         "target": "Frasier",
         "value": 4
-      },
-      {
-        "source": "2nd Guest",
-        "target": "Niles",
-        "value": 1
       },
       {
         "source": "Penelope",
@@ -28611,16 +26926,6 @@
         "value": 2
       },
       {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Best-Edited Half-Hour Series for Television",
-        "value": 1
-      },
-      {
-        "source": "Best-Edited Half-Hour Series for Television",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Patient",
         "target": "Niles",
         "value": 1
@@ -28634,16 +26939,6 @@
         "source": "Both",
         "target": "Niles",
         "value": 2
-      },
-      {
-        "source": "Outstanding Directorial Achievement in a Comedy Series",
-        "target": "Outstanding Cinematography for a Multi-Camera Series",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Cinematography for a Multi-Camera Series",
-        "target": "Niles",
-        "value": 1
       },
       {
         "source": "Mel",
@@ -28766,16 +27061,6 @@
         "value": 1
       },
       {
-        "source": "Donny",
-        "target": "Best Man",
-        "value": 1
-      },
-      {
-        "source": "Donny",
-        "target": "Mrs. Douglas",
-        "value": 4
-      },
-      {
         "source": "Tewksbury",
         "target": "Frasier",
         "value": 69
@@ -28887,11 +27172,6 @@
       },
       {
         "source": "Lana",
-        "target": "Guest 1",
-        "value": 1
-      },
-      {
-        "source": "Lana",
         "target": "Neil",
         "value": 1
       },
@@ -28916,28 +27196,8 @@
         "value": 3
       },
       {
-        "source": "Lana",
-        "target": "Mrs. Smolenski",
-        "value": 4
-      },
-      {
-        "source": "Lana",
-        "target": "Mr. Smolenski",
-        "value": 3
-      },
-      {
         "source": "All",
         "target": "Lana",
-        "value": 1
-      },
-      {
-        "source": "Guest 1",
-        "target": "Guest 1",
-        "value": 1
-      },
-      {
-        "source": "Guest 1",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -28972,11 +27232,6 @@
       },
       {
         "source": "Kirby",
-        "target": "Maitre D'",
-        "value": 2
-      },
-      {
-        "source": "Kirby",
         "target": "Claire",
         "value": 1
       },
@@ -28992,27 +27247,7 @@
       },
       {
         "source": "Friend",
-        "target": "Maitre D'",
-        "value": 1
-      },
-      {
-        "source": "Friend",
         "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Maitre D'",
-        "target": "Kirby",
-        "value": 2
-      },
-      {
-        "source": "Maitre D'",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Maitre D'",
-        "target": "Lana",
         "value": 1
       },
       {
@@ -29047,66 +27282,6 @@
       },
       {
         "source": "Joanne",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Smolenski",
-        "target": "Mrs. Smolenski",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Smolenski",
-        "target": "Lana",
-        "value": 2
-      },
-      {
-        "source": "Mrs. Smolenski",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Smolenski",
-        "target": "Mr. Smolenski",
-        "value": 2
-      },
-      {
-        "source": "Mr. Smolenski",
-        "target": "Lana",
-        "value": 5
-      },
-      {
-        "source": "David",
-        "target": "1st BM",
-        "value": 1
-      },
-      {
-        "source": "David",
-        "target": "2nd BM",
-        "value": 1
-      },
-      {
-        "source": "1st BM",
-        "target": "David",
-        "value": 1
-      },
-      {
-        "source": "2nd BM",
-        "target": "Martin",
-        "value": 1
-      },
-      {
-        "source": "3rd BM",
-        "target": "3rd BM",
-        "value": 1
-      },
-      {
-        "source": "3rd BM",
-        "target": "Credits",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Art Direction for a Series",
         "target": "Frasier",
         "value": 1
       },
@@ -29346,21 +27521,6 @@
         "value": 1
       },
       {
-        "source": "Best Man",
-        "target": "Donny",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Douglas",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Douglas",
-        "target": "Donny",
-        "value": 4
-      },
-      {
         "source": "Technician",
         "target": "Abby",
         "value": 1
@@ -29544,13 +27704,7 @@
         "id": "Charlie"
       },
       {
-        "id": "Outstanding Guest Actor in a Comedy Series"
-      },
-      {
         "id": "Cam"
-      },
-      {
-        "id": "Mrs. Moon"
       },
       {
         "id": "Simon"
@@ -29566,9 +27720,6 @@
       },
       {
         "id": "Albert"
-      },
-      {
-        "id": "All but Frasier"
       },
       {
         "id": "Lucy"
@@ -29593,9 +27744,6 @@
       },
       {
         "id": "Mike"
-      },
-      {
-        "id": "Outstanding Multi-Camera Picture Editing for a Series"
       },
       {
         "id": "Clerk"
@@ -29665,9 +27813,6 @@
       },
       {
         "id": "Warren"
-      },
-      {
-        "id": "Outstanding Cinematography for a Multi-Camera Series"
       },
       {
         "id": "Barista"
@@ -29757,15 +27902,6 @@
         "id": "Press"
       },
       {
-        "id": "Caller 1"
-      },
-      {
-        "id": "Caller 2"
-      },
-      {
-        "id": "Caller 3"
-      },
-      {
         "id": "Carl"
       },
       {
@@ -29827,9 +27963,6 @@
       },
       {
         "id": "Kids"
-      },
-      {
-        "id": "Outstanding Sound Mixing for a Comedy Series or Special"
       },
       {
         "id": "Frasier/Martin"
@@ -30113,11 +28246,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Mrs. Moon",
-        "value": 2
-      },
-      {
-        "source": "Frasier",
         "target": "Credits",
         "value": 6
       },
@@ -30383,21 +28511,6 @@
       },
       {
         "source": "Frasier",
-        "target": "Caller 1",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Caller 2",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
-        "target": "Caller 3",
-        "value": 1
-      },
-      {
-        "source": "Frasier",
         "target": "Carl",
         "value": 3
       },
@@ -30608,11 +28721,6 @@
       },
       {
         "source": "Martin",
-        "target": "Mrs. Moon",
-        "value": 4
-      },
-      {
-        "source": "Martin",
         "target": "Simon",
         "value": 5
       },
@@ -30778,11 +28886,6 @@
       },
       {
         "source": "Daphne",
-        "target": "Mrs. Moon",
-        "value": 22
-      },
-      {
-        "source": "Daphne",
         "target": "Simon",
         "value": 13
       },
@@ -30890,11 +28993,6 @@
         "source": "Niles",
         "target": "Roz",
         "value": 58
-      },
-      {
-        "source": "Niles",
-        "target": "Mrs. Moon",
-        "value": 19
       },
       {
         "source": "Niles",
@@ -31162,16 +29260,6 @@
         "value": 13
       },
       {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Frasier",
-        "value": 2
-      },
-      {
-        "source": "Outstanding Guest Actor in a Comedy Series",
-        "target": "Niles",
-        "value": 1
-      },
-      {
         "source": "Cam",
         "target": "Frasier",
         "value": 25
@@ -31203,11 +29291,6 @@
       },
       {
         "source": "Cam",
-        "target": "All but Frasier",
-        "value": 1
-      },
-      {
-        "source": "Cam",
         "target": "Williams",
         "value": 1
       },
@@ -31219,41 +29302,6 @@
       {
         "source": "Cam",
         "target": "Niles",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Martin",
-        "value": 2
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Niles",
-        "value": 20
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Frasier",
-        "value": 5
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Simon",
-        "value": 7
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Daphne",
-        "value": 16
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Mrs. Moon",
-        "value": 1
-      },
-      {
-        "source": "Mrs. Moon",
-        "target": "Roz",
         "value": 1
       },
       {
@@ -31275,11 +29323,6 @@
         "source": "Simon",
         "target": "Daphne",
         "value": 14
-      },
-      {
-        "source": "Simon",
-        "target": "Mrs. Moon",
-        "value": 4
       },
       {
         "source": "Simon",
@@ -31340,11 +29383,6 @@
         "source": "Albert",
         "target": "Frasier",
         "value": 2
-      },
-      {
-        "source": "All but Frasier",
-        "target": "Frasier",
-        "value": 1
       },
       {
         "source": "Lucy",
@@ -31509,11 +29547,6 @@
       {
         "source": "Mike",
         "target": "Andy",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Multi-Camera Picture Editing for a Series",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -31969,11 +30002,6 @@
       {
         "source": "Warren",
         "target": "Bill",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Cinematography for a Multi-Camera Series",
-        "target": "Frasier",
         "value": 1
       },
       {
@@ -32547,21 +30575,6 @@
         "value": 1
       },
       {
-        "source": "Caller 1",
-        "target": "Roz",
-        "value": 1
-      },
-      {
-        "source": "Caller 2",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
-        "source": "Caller 3",
-        "target": "Frasier",
-        "value": 1
-      },
-      {
         "source": "Carl",
         "target": "Frasier",
         "value": 3
@@ -32808,11 +30821,6 @@
       },
       {
         "source": "Kids",
-        "target": "Daphne",
-        "value": 1
-      },
-      {
-        "source": "Outstanding Sound Mixing for a Comedy Series or Special",
         "target": "Daphne",
         "value": 1
       },
